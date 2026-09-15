@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy IAppsCL</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#F5F7FA;
+    --surface:#FFFFFF;
+    --surface-2:#EEF1F5;
+    --border:#DDE3EA;
+    --text:#182233;
+    --text-2:#5B6572;
+    --text-3:#8A93A0;
+    --accent:#0A6FA8;
+    --accent-ink:#06527D;
+    --warm:#B8720A;
+    --warm-bg:#FBF0DC;
+    --code-bg:#EEF1F5;
+    --shadow: 0 1px 2px rgba(20,30,50,.05), 0 8px 24px rgba(20,30,50,.05);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#10151D;
+      --surface:#171D27;
+      --surface-2:#1E2530;
+      --border:#2A323F;
+      --text:#E8ECF1;
+      --text-2:#A3ADBB;
+      --text-3:#75808F;
+      --accent:#5CB6E8;
+      --accent-ink:#8ED0F0;
+      --warm:#E3A64A;
+      --warm-bg:#2B2416;
+      --code-bg:#1E2530;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#10151D;
+    --surface:#171D27;
+    --surface-2:#1E2530;
+    --border:#2A323F;
+    --text:#E8ECF1;
+    --text-2:#A3ADBB;
+    --text-3:#75808F;
+    --accent:#5CB6E8;
+    --accent-ink:#8ED0F0;
+    --warm:#E3A64A;
+    --warm-bg:#2B2416;
+    --code-bg:#1E2530;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans", system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  code, .mono{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+  }
+
+  a{ color:var(--accent); text-decoration-color:color-mix(in srgb, var(--accent) 40%, transparent); }
+  a:hover{ color:var(--accent-ink); }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; border-radius:3px; }
+
+  h1,h2,h3{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    text-wrap:balance;
+    color:var(--text);
+  }
+
+  .shell{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 24px 96px;
+    display:grid;
+    grid-template-columns:220px minmax(0,720px);
+    gap:56px;
+    align-items:start;
+  }
+  @media (max-width:860px){
+    .shell{ grid-template-columns:1fr; }
+  }
+
+  header.top{
+    padding:56px 24px 40px;
+    border-bottom:1px solid var(--border);
+    margin-bottom:16px;
+  }
+  header.top .inner{
+    max-width:1120px;
+    margin:0 auto;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .brand .mark{
+    width:40px; height:40px;
+    border-radius:11px;
+    background:linear-gradient(135deg, var(--accent), var(--accent-ink));
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-family:"Fraunces",serif; font-weight:600; font-size:20px;
+    flex-shrink:0;
+    box-shadow:var(--shadow);
+  }
+  .brand h1{
+    font-size:1.5rem;
+    margin:0;
+    line-height:1.15;
+  }
+  .brand .sub{
+    font-size:.85rem;
+    color:var(--text-2);
+    margin-top:2px;
+  }
+  .updated{
+    font-size:.8rem;
+    color:var(--text-3);
+    font-family:"IBM Plex Mono", monospace;
+    white-space:nowrap;
+  }
+
+  nav.toc{
+    position:sticky;
+    top:24px;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    font-size:.85rem;
+  }
+  nav.toc .label{
+    font-size:.7rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-3);
+    margin:0 0 8px 10px;
+  }
+  nav.toc a{
+    color:var(--text-2);
+    text-decoration:none;
+    padding:7px 10px;
+    border-radius:7px;
+    border-left:2px solid transparent;
+  }
+  nav.toc a:hover{
+    background:var(--surface-2);
+    color:var(--text);
+  }
+  nav.toc a.app-link{
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  nav.toc .dot{
+    width:7px; height:7px; border-radius:50%;
+    flex-shrink:0;
+    background:var(--accent);
+  }
+  @media (max-width:860px){
+    nav.toc{
+      position:static;
+      flex-direction:row;
+      overflow-x:auto;
+      gap:6px;
+      padding-bottom:4px;
+      -webkit-overflow-scrolling:touch;
+    }
+    nav.toc .label{ display:none; }
+    nav.toc a{
+      white-space:nowrap;
+      background:var(--surface);
+      border:1px solid var(--border);
+    }
+  }
+
+  main{ min-width:0; }
+
+  section{
+    margin-bottom:52px;
+  }
+  section > h2{
+    font-size:1.4rem;
+    margin:0 0 14px;
+  }
+  section > p, section > ul{
+    color:var(--text-2);
+  }
+  p{ margin:0 0 14px; }
+  ul{ margin:0 0 14px; padding-left:1.3em; }
+  li{ margin-bottom:6px; color:var(--text-2); }
+  li::marker{ color:var(--text-3); }
+
+  .intro p{ font-size:1.02rem; color:var(--text); }
+  .intro p.lede{
+    font-family:"Fraunces", serif;
+    font-size:1.25rem;
+    font-weight:500;
+    color:var(--text);
+    line-height:1.45;
+  }
+
+  .app-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:28px 28px 8px;
+    box-shadow:var(--shadow);
+  }
+  .app-card h2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.3rem;
+    margin-top:0;
+  }
+  .app-card .tag{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.68rem;
+    letter-spacing:.04em;
+    color:var(--text-3);
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    border-radius:5px;
+    padding:2px 7px;
+    font-weight:400;
+  }
+  .app-card h3{
+    font-family:"IBM Plex Sans", sans-serif;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--text-3);
+    font-weight:600;
+    margin:22px 0 10px;
+  }
+
+  table.perm{
+    width:100%;
+    border-collapse:collapse;
+    font-size:.88rem;
+    margin-bottom:8px;
+  }
+  table.perm th{
+    text-align:left;
+    font-size:.72rem;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--text-3);
+    font-weight:600;
+    padding:0 10px 8px 0;
+    border-bottom:1px solid var(--border);
+  }
+  table.perm td{
+    padding:10px 10px 10px 0;
+    border-bottom:1px solid var(--border);
+    color:var(--text-2);
+    vertical-align:top;
+  }
+  table.perm tr:last-child td{ border-bottom:none; }
+  table.perm td.perm-name{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.78rem;
+    color:var(--accent-ink);
+    white-space:nowrap;
+    padding-right:16px;
+  }
+
+  .pill-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:8px;
+  }
+  .pill{
+    font-size:.78rem;
+    padding:4px 11px;
+    border-radius:999px;
+    background:var(--surface-2);
+    border:1px solid var(--border);
+    color:var(--text-2);
+  }
+  .pill.warm{
+    background:var(--warm-bg);
+    color:var(--warm);
+    border-color:transparent;
+  }
+
+  .no-perm{
+    font-size:.88rem;
+    color:var(--text-3);
+    font-style:italic;
+    padding:8px 0 4px;
+  }
+
+  hr.rule{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:44px 0;
+  }
+
+  .contact-box{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:26px 28px;
+    box-shadow:var(--shadow);
+  }
+  .contact-box dl{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:6px 18px;
+    margin:14px 0 0;
+    font-size:.92rem;
+  }
+  .contact-box dt{ color:var(--text-3); }
+  .contact-box dd{ margin:0; color:var(--text); font-family:"IBM Plex Mono",monospace; font-size:.86rem; }
+
+  footer.page{
+    max-width:1120px;
+    margin:0 auto;
+    padding:32px 24px 64px;
+    color:var(--text-3);
+    font-size:.8rem;
+    border-top:1px solid var(--border);
+    margin-top:8px;
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <div class="brand">
+      <div class="mark">i</div>
+      <div>
+        <h1>Informativa sulla privacy</h1>
+        <div class="sub">Suite di app IAppsCL &middot; Luigi Casella</div>
+      </div>
+    </div>
+    <div class="updated">Ultimo aggiornamento: 15 settembre 2026</div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="toc" aria-label="Indice">
+    <div class="label">In questa pagina</div>
+    <a href="#principi">Principi generali</a>
+    <a class="app-link" href="#xmeteo"><span class="dot" style="background:#0A6FA8"></span>xMeteo</a>
+    <a class="app-link" href="#dontcall"><span class="dot" style="background:#1E8E5A"></span>Don't Call!</a>
+    <a class="app-link" href="#onetool"><span class="dot" style="background:#7A4FBD"></span>OneTool</a>
+    <a class="app-link" href="#salvacena"><span class="dot" style="background:#C0392B"></span>Salva Cena</a>
+    <a class="app-link" href="#scadenze"><span class="dot" style="background:#B8720A"></span>Scadenze</a>
+    <a href="#terze-parti">Servizi di terze parti</a>
+    <a href="#diritti">Diritti e conservazione</a>
+    <a href="#minori">Minori</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
+
+  <main>
+    <section class="intro" id="principi">
+      <p class="lede">Le app della suite IAppsCL sono sviluppate e mantenute da un unico sviluppatore indipendente, Luigi Casella. Questa pagina spiega, app per app, quali dati vengono trattati e perché.</p>
+      <p>Principio comune a tutte le app: <strong>nessun account, nessuna raccolta dati oltre il minimo necessario a far funzionare la singola funzione, nessuna vendita di dati a terzi.</strong> Dove non specificato altrimenti, i dati generati dall'uso dell'app (impostazioni, contenuti salvati, cronologia) restano esclusivamente sul dispositivo e vengono eliminati alla disinstallazione dell'app.</p>
+      <p>Alcune app mostrano annunci pubblicitari tramite Google AdMob per sostenersi economicamente; il trattamento dati operato da AdMob è descritto nella sezione <a href="#terze-parti">Servizi di terze parti</a> ed è indipendente da questa informativa.</p>
+    </section>
+
+    <section class="app-card" id="xmeteo">
+      <h2>xMeteo <span class="tag">net.iappscl.xmeteo</span></h2>
+      <p>App meteo con previsioni attuali, orarie e a 7 giorni, aggregate da più fonti pubbliche (Open-Meteo, MET Norway, NOAA, Environment Canada, Bright Sky/DWD).</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">ACCESS_FINE_LOCATION<br>ACCESS_COARSE_LOCATION</td><td>Determinare la posizione attuale per mostrare il meteo locale. La posizione non viene registrata né trasmessa altrove: è usata solo per interrogare le fonti meteo e viene mantenuta sul dispositivo.</td></tr>
+        <tr><td class="perm-name">INTERNET</td><td>Scaricare i dati meteo dalle fonti scelte nelle impostazioni.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Impostazioni (unità, aspetto, fonti attive), località salvate manualmente e l'ultima posizione risolta (usata anche dal widget nella schermata Home). Nessun account, nessuna sincronizzazione su server propri.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row"><span class="pill warm">Google AdMob — video con ricompensa</span></div>
+      <p>Guardare un video pubblicitario sblocca temporaneamente le funzioni Premium (fonti multiple, previsioni estese, personalizzazioni). Nessun acquisto in-app.</p>
+    </section>
+
+    <section class="app-card" id="dontcall">
+      <h2>Don't Call! <span class="tag">net.iappscl.dontcall</span></h2>
+      <p>App di blocco chiamate: filtra automaticamente numeri esteri o non locali secondo regole impostate dall'utente.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">Ruolo Screening chiamate<br><span style="font-size:.72rem">(CallScreeningService)</span></td><td>Valutare ogni chiamata in arrivo (prefisso, se è un contatto, regole impostate) per decidere se bloccarla. La valutazione avviene interamente sul dispositivo: il numero chiamante non viene mai trasmesso a server esterni.</td></tr>
+        <tr><td class="perm-name">READ_CONTACTS</td><td>Verificare se il numero chiamante è un contatto salvato, per non bloccare mai le persone in rubrica.</td></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare la notifica di una chiamata bloccata.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Regole di blocco, elenco numeri bloccati manualmente, cronologia delle chiamate bloccate: tutto salvato localmente, mai inviato altrove.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa</span>
+        <span class="pill warm">Google Play Billing</span>
+      </div>
+      <p>Lo sblocco Premium permanente è un acquisto gestito interamente da Google Play: l'app non riceve né conserva dati della carta di pagamento.</p>
+    </section>
+
+    <section class="app-card" id="onetool">
+      <h2>OneTool <span class="tag">net.iappscl.onetool</span></h2>
+      <p>Raccolta di strumenti pratici (bussola, livella, contafrequenza, fonometro, lente, specchio, torcia e altri).</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">CAMERA</td><td>Usato in tempo reale solo dagli strumenti che lo richiedono (lente, specchio, torcia, scanner QR, contafrequenza cardiaca). L'immagine viene elaborata a video e non salvata né trasmessa, a meno che l'utente stesso non scelga di salvare uno scatto.</td></tr>
+        <tr><td class="perm-name">RECORD_AUDIO</td><td>Usato solo dal fonometro, per misurare il livello sonoro in tempo reale. L'audio non viene registrato né conservato.</td></tr>
+        <tr><td class="perm-name">ACCESS_FINE_LOCATION<br>ACCESS_COARSE_LOCATION</td><td>Usato solo dal tachimetro GPS per calcolare la velocità di spostamento.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Segnali tattili di alcuni strumenti (es. metronomo, timer).</td></tr>
+      </table>
+      <p class="no-perm">Ogni permesso è attivo solo mentre lo strumento corrispondente è apertamente in uso.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row"><span class="pill warm">Google AdMob — video con ricompensa</span></div>
+      <p>Sblocca temporaneamente gli strumenti aggiuntivi oltre alla bussola, gratuita di default.</p>
+    </section>
+
+    <section class="app-card" id="salvacena">
+      <h2>Salva Cena <span class="tag">net.iappscl.salvacena</span></h2>
+      <p>Catalogo di ricette con ricerca per ingredienti disponibili, per aiutare a decidere cosa cucinare.</p>
+
+      <h3>Permessi</h3>
+      <p class="no-perm">Nessun permesso di sistema oltre l'accesso a Internet per mostrare gli annunci pubblicitari.</p>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Ricette personali create o modificate dall'utente, salvate localmente. Il catalogo base è incluso nell'app e non richiede connessione.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row"><span class="pill warm">Google AdMob — video con ricompensa</span></div>
+      <p>Sblocca temporaneamente il catalogo completo di ricette, invece del campione gratuito.</p>
+    </section>
+
+    <section class="app-card" id="scadenze">
+      <h2>Scadenze <span class="tag">net.iappscl.scadenze</span></h2>
+      <p>Promemoria per scadenze personali (bollo, assicurazione, revisione e voci personalizzate).</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare il promemoria di una scadenza in arrivo.</td></tr>
+        <tr><td class="perm-name">SCHEDULE_EXACT_ALARM</td><td>Far scattare il promemoria esattamente alla data/ora impostata, anche a schermo spento.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Tutte le scadenze, le note e le preferenze di promemoria sono salvate in un database locale sul dispositivo. Nessun account, nessuna pubblicità attiva in questa app.</p>
+    </section>
+
+    <hr class="rule">
+
+    <section id="terze-parti">
+      <h2>Servizi di terze parti</h2>
+      <p>Le app che mostrano pubblicità utilizzano <strong>Google AdMob</strong>, che può raccogliere identificatori pubblicitari e dati d'uso secondo la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa privacy di Google</a>. Al primo avvio, dove richiesto dalla normativa (utenti nell'Unione Europea/SEE/UK), viene mostrato un modulo di consenso (Google User Messaging Platform) per scegliere le preferenze sulla pubblicità personalizzata.</p>
+      <p>Don't Call! utilizza inoltre <strong>Google Play Billing</strong> per gli acquisti in-app: i dati di pagamento sono gestiti esclusivamente da Google.</p>
+      <p>Nessuna delle app della suite utilizza servizi di analisi, tracciamento o SDK pubblicitari diversi da quelli elencati qui.</p>
+    </section>
+
+    <section id="diritti">
+      <h2>Diritti e conservazione dei dati</h2>
+      <ul>
+        <li>I dati generati dall'uso dell'app (impostazioni, contenuti salvati) restano sul dispositivo e vengono eliminati disinstallando l'app.</li>
+        <li>Nessuna delle app richiede la creazione di un account: non esiste un profilo utente da richiedere o cancellare lato server.</li>
+        <li>Per qualsiasi domanda su un trattamento specifico, o per richiedere informazioni sui dati eventualmente raccolti dai servizi di terze parti elencati sopra, scrivere all'indirizzo in fondo alla pagina.</li>
+      </ul>
+    </section>
+
+    <section id="minori">
+      <h2>Minori</h2>
+      <p>Le app della suite non sono dirette a un pubblico di minori di 13 anni e non raccolgono consapevolmente dati identificativi da questa fascia di età.</p>
+    </section>
+
+    <section id="modifiche">
+      <h2>Modifiche a questa informativa</h2>
+      <p>Questa pagina può essere aggiornata in caso di modifiche alle app o ai servizi di terze parti utilizzati; la data in alto viene aggiornata a ogni revisione.</p>
+    </section>
+
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <div class="contact-box">
+        <p style="margin:0; color:var(--text-2)">Per domande su questa informativa o sul trattamento dei dati in una delle app IAppsCL:</p>
+        <dl>
+          <dt>Sviluppatore</dt><dd>Luigi Casella</dd>
+          <dt>Email</dt><dd>luigi.casella73@gmail.com</dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="page">
+  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Scadenze sono app indipendenti sviluppate da Luigi Casella.
+</footer>
+
+</body>
+</html>
