@@ -366,7 +366,8 @@
     <a class="app-link" href="#dontcall"><span class="dot" style="background:#1E8E5A"></span>Don't Call!</a>
     <a class="app-link" href="#onetool"><span class="dot" style="background:#7A4FBD"></span>OneTool</a>
     <a class="app-link" href="#salvacena"><span class="dot" style="background:#C0392B"></span>Salva Cena</a>
-    <a class="app-link" href="#scadenze"><span class="dot" style="background:#B8720A"></span>Scadenze</a>
+    <a class="app-link" href="#avvisami"><span class="dot" style="background:#B8720A"></span>Avvisami</a>
+    <a class="app-link" href="#nonscade"><span class="dot" style="background:#1E88E5"></span>NonScade</a>
     <a class="app-link" href="#trovauto"><span class="dot" style="background:#0277BD"></span>TrovAuto</a>
     <a href="#terze-parti">Servizi di terze parti</a>
     <a href="#diritti">Diritti e conservazione</a>
@@ -457,19 +458,54 @@
       <p>Sblocca temporaneamente il catalogo completo di ricette, invece del campione gratuito.</p>
     </section>
 
-    <section class="app-card" id="scadenze">
-      <h2>Scadenze <span class="tag">net.iappscl.scadenze</span></h2>
-      <p>Promemoria per scadenze personali (bollo, assicurazione, revisione e voci personalizzate).</p>
+    <section class="app-card" id="avvisami">
+      <h2>Avvisami <span class="tag">net.iappscl.avvisami</span></h2>
+      <p>Promemoria per scadenze fiscali, di veicoli, di casa e di salute, con notifica configurabile in anticipo.</p>
 
       <h3>Permessi e a cosa servono</h3>
       <table class="perm">
         <tr><th>Permesso</th><th>Uso</th></tr>
-        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare il promemoria di una scadenza in arrivo.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Ripristinare i promemoria programmati dopo il riavvio del dispositivo.</td></tr>
         <tr><td class="perm-name">SCHEDULE_EXACT_ALARM</td><td>Far scattare il promemoria esattamente alla data/ora impostata, anche a schermo spento.</td></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare il promemoria di una scadenza in arrivo.</td></tr>
+        <tr><td class="perm-name">INTERNET</td><td>Aggiornare ogni anno le date ufficiali delle scadenze fiscali e mostrare gli annunci pubblicitari.</td></tr>
+        <tr><td class="perm-name">ACCESS_COARSE_LOCATION</td><td>Suggerire regione e comune di default quando si crea un immobile, in base all'ultima posizione approssimativa nota al sistema (nessuna richiesta di posizione precisa o in tempo reale).</td></tr>
       </table>
 
       <h3>Cosa resta sul dispositivo</h3>
-      <p>Tutte le scadenze, le note e le preferenze di promemoria sono salvate in un database locale sul dispositivo. Nessun account, nessuna pubblicità attiva in questa app.</p>
+      <p>Tutte le scadenze, gli immobili e i veicoli inseriti, le note e le preferenze di promemoria sono salvate in un database locale sul dispositivo. Nessun account.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa</span>
+        <span class="pill warm">Google Play Billing</span>
+      </div>
+      <p>Lo sblocco Premium (lingua, tema e sfondo personalizzabili) si ottiene guardando un video pubblicitario per la sessione corrente, oppure con un acquisto una tantum gestito interamente da Google Play.</p>
+    </section>
+
+    <section class="app-card" id="nonscade">
+      <h2>NonScade <span class="tag">net.iappscl.nonscade</span></h2>
+      <p>Archivio di scontrini e garanzie, con un promemoria prima che la garanzia di un acquisto scada.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">CAMERA</td><td>Fotografare lo scontrino (con lettura automatica di data e importo interamente sul dispositivo, nessun invio dell'immagine altrove) e, facoltativamente, il prodotto acquistato.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Ripristinare i promemoria di scadenza garanzia dopo il riavvio del dispositivo.</td></tr>
+        <tr><td class="perm-name">SCHEDULE_EXACT_ALARM</td><td>Far scattare il promemoria esattamente alla data/ora impostata, anche a schermo spento.</td></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare il promemoria di una garanzia in scadenza.</td></tr>
+        <tr><td class="perm-name">INTERNET</td><td>Mostrare gli annunci pubblicitari.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Scontrini, foto dei prodotti, durate di garanzia e preferenze di promemoria sono salvate localmente sul dispositivo. Il riconoscimento di data e importo sullo scontrino avviene interamente offline, sul dispositivo stesso. Nessun account.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa</span>
+        <span class="pill warm">Google Play Billing</span>
+      </div>
+      <p>Lo sblocco Premium (lingua, tema e sfondo personalizzabili) si ottiene guardando un video pubblicitario per la sessione corrente, oppure con un acquisto una tantum gestito interamente da Google Play.</p>
     </section>
 
     <section class="app-card" id="trovauto">
@@ -539,7 +575,7 @@
 </div>
 
 <footer class="page">
-  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Scadenze, TrovAuto sono app indipendenti sviluppate da Luigi Casella.
+  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Avvisami, NonScade, TrovAuto sono app indipendenti sviluppate da Luigi Casella.
 </footer>
 
 </body>
