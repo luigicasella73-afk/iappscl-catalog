@@ -367,6 +367,7 @@
     <a class="app-link" href="#onetool"><span class="dot" style="background:#7A4FBD"></span>OneTool</a>
     <a class="app-link" href="#salvacena"><span class="dot" style="background:#C0392B"></span>Salva Cena</a>
     <a class="app-link" href="#scadenze"><span class="dot" style="background:#B8720A"></span>Scadenze</a>
+    <a class="app-link" href="#trovauto"><span class="dot" style="background:#0277BD"></span>TrovAuto</a>
     <a href="#terze-parti">Servizi di terze parti</a>
     <a href="#diritti">Diritti e conservazione</a>
     <a href="#minori">Minori</a>
@@ -471,6 +472,31 @@
       <p>Tutte le scadenze, le note e le preferenze di promemoria sono salvate in un database locale sul dispositivo. Nessun account, nessuna pubblicità attiva in questa app.</p>
     </section>
 
+    <section class="app-card" id="trovauto">
+      <h2>TrovAuto <span class="tag">net.iappscl.trovauto</span></h2>
+      <p>Salva la posizione dell'auto quando il telefono si disconnette dal Bluetooth del veicolo, per ritrovarla facilmente in seguito.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">BLUETOOTH_CONNECT</td><td>Leggere nome e categoria del dispositivo Bluetooth che si è appena disconnesso, per riconoscere solo i dispositivi audio/auto (car-kit, autoradio) e ignorare gli altri (es. cuffie usate in casa).</td></tr>
+        <tr><td class="perm-name">ACCESS_FINE_LOCATION<br>ACCESS_COARSE_LOCATION</td><td>Determinare la posizione dell'auto nel momento in cui il Bluetooth si disconnette.</td></tr>
+        <tr><td class="perm-name">ACCESS_BACKGROUND_LOCATION</td><td>Salvare la posizione anche quando l'app non è aperta in primo piano, dato che la disconnessione Bluetooth avviene tipicamente ad app chiusa.</td></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare la notifica di conferma "Posizione auto salvata".</td></tr>
+        <tr><td class="perm-name">CAMERA</td><td>Solo per gli utenti Premium che scelgono di aggiungere una foto del parcheggio a una posizione salvata; richiesto solo al primo utilizzo di questa funzione.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>La posizione salvata (o la cronologia delle posizioni, per gli utenti Premium), le eventuali foto del parcheggio e le note aggiunte manualmente sono salvate localmente sul dispositivo. Nessun account, nessuna posizione trasmessa altrove.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa</span>
+        <span class="pill warm">Google Play Billing</span>
+      </div>
+      <p>Lo sblocco Premium (apertura in Maps, cronologia, foto e note) si ottiene guardando un video pubblicitario per la sessione corrente, oppure con un acquisto una tantum gestito interamente da Google Play.</p>
+    </section>
+
     <hr class="rule">
 
     <section id="terze-parti">
@@ -513,7 +539,7 @@
 </div>
 
 <footer class="page">
-  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Scadenze sono app indipendenti sviluppate da Luigi Casella.
+  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Scadenze, TrovAuto sono app indipendenti sviluppate da Luigi Casella.
 </footer>
 
 </body>
