@@ -138,7 +138,7 @@
       </svg>
       <span>IAppsCL</span>
     </div>
-    <p>Piccole applicazioni Android sviluppate come progetti personali.</p>
+    <p><span id="app-count">9</span> piccole applicazioni Android sviluppate come progetti personali.</p>
   </header>
 
   <input type="radio" name="sort" id="sort-alpha" checked>
@@ -716,6 +716,10 @@
   });
   updateSort();
 })();
+
+// Numero di app nel sottotitolo contato dalle card presenti: resta giusto
+// quando se ne aggiunge o toglie una.
+document.getElementById("app-count").textContent = document.querySelectorAll("#grid .card").length;
 </script>
 </body>
 </html>
