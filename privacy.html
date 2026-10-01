@@ -448,17 +448,25 @@
 
     <section class="app-card" id="salvacena">
       <h2>Salva Cena <span class="tag">net.iappscl.salvacena</span></h2>
-      <p>Catalogo di ricette con ricerca per ingredienti disponibili, per aiutare a decidere cosa cucinare.</p>
+      <p>Ricette in base agli ingredienti disponibili, ai commensali e alle calorie, con dispensa e scadenze. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/salvacena/">iappscl-privacy/salvacena</a>.</p>
 
-      <h3>Permessi</h3>
-      <p class="no-perm">Nessun permesso di sistema oltre l'accesso a Internet per mostrare gli annunci pubblicitari.</p>
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Avvisare dei prodotti della dispensa in scadenza.</td></tr>
+        <tr><td class="perm-name">INTERNET</td><td>Solo per caricare gli annunci pubblicitari.</td></tr>
+      </table>
+      <p>Nessun permesso per fotocamera o microfono: la foto dello scontrino e la dettatura degli ingredienti passano dalle app di sistema. Lo scontrino viene letto sul dispositivo (Google ML Kit) e la foto viene cancellata subito dopo.</p>
 
       <h3>Cosa resta sul dispositivo</h3>
-      <p>Ricette personali create o modificate dall'utente, salvate localmente. Il catalogo base è incluso nell'app e non richiede connessione.</p>
+      <p>Ingredienti, ricette personali, prodotti della dispensa con le scadenze e impostazioni, salvati localmente. Il catalogo base è incluso nell'app e non richiede connessione. "Genera con AI" passa la richiesta all'assistente AI scelto dall'utente, solo quando tocca il pulsante.</p>
 
       <h3>Monetizzazione</h3>
-      <div class="pill-row"><span class="pill warm">Google AdMob — video con ricompensa</span></div>
-      <p>Sblocca temporaneamente il catalogo completo di ricette, invece del campione gratuito.</p>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa</span>
+        <span class="pill warm">Google Play Billing</span>
+      </div>
+      <p>Il video sblocca per la sessione corrente il catalogo completo, la dispensa e gli archivi personali, invece del campione gratuito.</p>
     </section>
 
     <section class="app-card" id="avvisami">
