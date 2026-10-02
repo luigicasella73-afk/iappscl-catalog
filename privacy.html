@@ -411,8 +411,7 @@
       <h3>Permessi e a cosa servono</h3>
       <table class="perm">
         <tr><th>Permesso</th><th>Uso</th></tr>
-        <tr><td class="perm-name">Ruolo Screening chiamate<br><span style="font-size:.72rem">(CallScreeningService)</span></td><td>Valutare ogni chiamata in arrivo (prefisso, se è un contatto, regole impostate) per decidere se bloccarla. La valutazione avviene interamente sul dispositivo: il numero chiamante non viene mai trasmesso a server esterni.</td></tr>
-        <tr><td class="perm-name">READ_CONTACTS</td><td>Verificare se il numero chiamante è un contatto salvato, per non bloccare mai le persone in rubrica.</td></tr>
+        <tr><td class="perm-name">Ruolo Screening chiamate<br><span style="font-size:.72rem">(CallScreeningService)</span></td><td>Valutare ogni chiamata in arrivo (prefisso, tipo di linea, regole impostate) per decidere se bloccarla. Le chiamate dai numeri in rubrica non arrivano all'app: Android le fa squillare sempre e l'app non legge la rubrica. La valutazione avviene interamente sul dispositivo: il numero chiamante non viene mai trasmesso a server esterni.</td></tr>
         <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Mostrare la notifica di una chiamata bloccata.</td></tr>
       </table>
 
