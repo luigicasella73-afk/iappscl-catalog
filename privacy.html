@@ -354,7 +354,7 @@
         <div class="sub">Suite di app IAppsCL &middot; Luigi Casella</div>
       </div>
     </div>
-    <div class="updated">Ultimo aggiornamento: 11 ottobre 2026</div>
+    <div class="updated">Ultimo aggiornamento: 16 ottobre 2026</div>
   </div>
 </header>
 
@@ -376,8 +376,8 @@
     <a class="app-link" href="#tripfriend"><span class="dot" style="background:#F2B46C"></span>Trip Friend</a>
     <a class="app-link" href="#body3d"><span class="dot" style="background:#5BA0E6"></span>3D-Body</a>
     <a class="app-link" href="#legami"><span class="dot" style="background:#C8102E"></span>Legami</a>
-    <a href="#terze-parti">Servizi di terze parti</a>
-    <a href="#diritti">Diritti e conservazione</a>
+        <a href="#titolare">Titolare e basi giuridiche</a>
+    Diritti e reclami</a>
     <a href="#minori">Minori</a>
     <a href="#contatti">Contatti</a>
   </nav>
@@ -438,10 +438,12 @@
         <tr><th>Permesso</th><th>Uso</th></tr>
         <tr><td class="perm-name">CAMERA</td><td>Usato in tempo reale solo dagli strumenti che lo richiedono (lente, specchio, torcia, scanner QR, contafrequenza cardiaca). L'immagine viene elaborata a video e non salvata né trasmessa, a meno che l'utente stesso non scelga di salvare uno scatto.</td></tr>
         <tr><td class="perm-name">RECORD_AUDIO</td><td>Usato solo dal fonometro, per misurare il livello sonoro in tempo reale. L'audio non viene registrato né conservato.</td></tr>
-        <tr><td class="perm-name">ACCESS_FINE_LOCATION<br>ACCESS_COARSE_LOCATION</td><td>Usato solo dal tachimetro GPS per calcolare la velocità di spostamento.</td></tr>
-        <tr><td class="perm-name">VIBRATE</td><td>Segnali tattili di alcuni strumenti (es. metronomo, timer).</td></tr>
+        <tr><td class="perm-name">ACCESS_FINE_LOCATION<br>ACCESS_COARSE_LOCATION</td>Usato solo da bussola, altimetro e tachimetro, mentre sono aperti.
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Avvisare alla scadenza di un timer.</td></tr>
+        <tr><td class="perm-name">SCHEDULE_EXACT_ALARM</td><td>Far scattare il timer all'orario preciso impostato.</td></tr>
+        <tr><td class="perm-name">WRITE_EXTERNAL_STORAGE</td><td>Solo Android 9 e precedenti: salvare l'immagine di un codice QR generato, se lo chiede l'utente.</td></tr>
       </table>
-      <p class="no-perm">Ogni permesso è attivo solo mentre lo strumento corrispondente è apertamente in uso.</p>
+       Il cardiofrequenzimetro non è un dispositivo medico: il valore è indicativo e non va usato per diagnosi o cure.
 
       <h3>Monetizzazione</h3>
       <div class="pill-row"><span class="pill warm">Google AdMob — video con ricompensa</span></div>
@@ -647,7 +649,7 @@
       </table>
 
       <h3>Cosa resta sul dispositivo</h3>
-      <p>Mezzi con le loro scadenze e i dati da libretto, documenti, parcheggi con note e foto, cronologie, percorsi, proposte di viaggio, luoghi salvati, luogo e ultimo meteo dei widget e impostazioni sono salvati nella memoria locale dell'app. Nessun account e nessun server. Per ottenere previsioni, percorsi, mappe e prezzi l'app invia le sole coordinate dei luoghi interessati direttamente ai servizi pubblici usati (MET Norway, NOAA, Environment Canada, Bright Sky, OpenStreetMap, Photon, OSRM, Valhalla, Overpass, Wikipedia/Wikidata/Wikimedia Commons, prezzi carburanti del MIMIT; Open-Meteo solo se inserisci una tua chiave commerciale; Google Maps solo se apri un luogo in Maps): i dettagli sono nell'<a href="https://luigicasella73-afk.github.io/iappscl-privacy/tripfriend/" target="_blank" rel="noopener">informativa completa di Trip Friend</a>.</p>
+      <p>Mezzi con le loro scadenze e i dati da libretto, documenti, parcheggi con note e foto, cronologie, percorsi, proposte di viaggio, luoghi salvati, luogo e ultimo meteo dei widget e impostazioni sono salvati nella memoria locale dell'app. Nessun account e nessun server. Per ottenere previsioni, percorsi, mappe e prezzi l'app invia le sole coordinate dei luoghi interessati direttamente ai servizi pubblici usati (MET Norway, NOAA, Environment Canada, Bright Sky, MeteoAlarm, che riceve solo il paese, OpenStreetMap, Photon, OSRM, Valhalla, Overpass, Wikipedia/Wikidata/Wikimedia Commons, prezzi carburanti del MIMIT; Open-Meteo solo se inserisci una tua chiave commerciale; Google Maps solo se apri un luogo in Maps): i dettagli sono nell'<a href="https://luigicasella73-afk.github.io/iappscl-privacy/tripfriend/" target="_blank" rel="noopener">informativa completa di Trip Friend</a>.</p>
 
       <h3>Monetizzazione</h3>
       <div class="pill-row">
@@ -658,7 +660,7 @@
 
     <section class="app-card" id="body3d">
       <h2>3D-Body <span class="tag">net.iappscl.body3d</span></h2>
-      <p>Atlante anatomico 3D: un corpo umano da ruotare, ingrandire e sezionare, con scheletro, organi, muscoli, arterie, vene e sistema nervoso. Il modello (BodyParts3D, CC BY-SA 2.1 JP) è incluso nell'app e viene disegnato sul telefono.</p>
+      <p>Atlante anatomico 3D: un corpo umano da ruotare, ingrandire e sezionare, con scheletro, organi, muscoli, arterie, vene e sistema nervoso. Il modello (BodyParts3D, CC BY-SA 2.1 JP; polmoni, parotidi e tonsille da Human Reference Atlas / HuBMAP, CC BY 4.0; nervi periferici, midollo spinale, tiroide, paratiroidi e linfonodi da Z-Anatomy, CC BY-SA 4.0) è incluso nell'app e viene disegnato sul telefono.</p>
 
       <h3>Permessi e a cosa servono</h3>
       <table class="perm">
@@ -708,23 +710,34 @@
 
     <section id="terze-parti">
       <h2>Servizi di terze parti</h2>
-      <p>Le app che mostrano pubblicità utilizzano <strong>Google AdMob</strong>, che può raccogliere identificatori pubblicitari e dati d'uso secondo la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa privacy di Google</a>. Al primo avvio, dove richiesto dalla normativa (utenti nell'Unione Europea/SEE/UK), viene mostrato un modulo di consenso (Google User Messaging Platform) per scegliere le preferenze sulla pubblicità personalizzata.</p>
+      <p>Le app che mostrano pubblicità utilizzano <strong>Google AdMob</strong>, che può raccogliere identificatori pubblicitari e dati d'uso secondo la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa privacy di Google</a>. Al primo avvio, dove richiesto dalla normativa (Unione Europea, SEE, Regno Unito e Svizzera), viene mostrato un modulo di consenso (Google User Messaging Platform) per scegliere le preferenze sulla pubblicità personalizzata. Le scelte si possono cambiare o revocare in qualsiasi momento dalla voce <strong>"Consenso pubblicità"</strong> nelle Impostazioni di ogni app, che riapre lo stesso modulo. Senza il via del modulo l'app non carica annunci.</p>
       <p>Alcune app includono la libreria <strong>Google Play Billing</strong>, ma nessuna offre acquisti in-app: Premium si sblocca solo guardando un video pubblicitario, per la sessione corrente. La libreria resta inclusa solo per riconoscere un eventuale Premium ottenuto in passato tramite Google Play; le app non vedono né conservano dati di pagamento.</p>
       <p>Nessuna delle app della suite utilizza servizi di analisi, tracciamento o SDK pubblicitari diversi da quelli elencati qui.</p>
     </section>
 
-    <section id="diritti">
-      <h2>Diritti e conservazione dei dati</h2>
+    <section id="titolare">
+      <h2>Titolare del trattamento, basi giuridiche e trasferimenti</h2>
+      <p><strong>Titolare del trattamento</strong> è Luigi Casella (IAppsCL), sviluppatore indipendente, contattabile all'indirizzo <a href="mailto:IAppsCL@gmail.com">IAppsCL@gmail.com</a>. Non è stato nominato un responsabile della protezione dei dati (DPO), perché non è obbligatorio per questo tipo di trattamento.</p>
+      <ul>
+        <li><strong>Dati che restano sul dispositivo</strong> (contenuti, impostazioni, cronologie): non li riceviamo e non li trattiamo noi; li gestisce l'utente sul proprio telefono.</li>
+        <li><strong>Pubblicità (Google AdMob)</strong>: nell'Unione Europea, nello SEE, nel Regno Unito e in Svizzera gli annunci personalizzati e l'uso dell'identificativo pubblicitario si basano sul <strong>consenso</strong> dell'utente (art. 6.1.a GDPR e art. 122 del Codice privacy). Per gli annunci non personalizzati, la misurazione e la prevenzione delle frodi Google può basarsi sul <strong>legittimo interesse</strong> (art. 6.1.f GDPR), a cui ci si può opporre dallo stesso modulo. Google agisce come titolare autonomo per i dati che raccoglie.</li>
+        <li><strong>Email ricevute</strong>: usate solo per rispondere (art. 6.1.b e 6.1.f GDPR) e conservate per il tempo necessario a gestire la richiesta.</li>
+      </ul>
+      <p><strong>Trasferimenti fuori dall'UE</strong>: Google può trattare i dati pubblicitari anche negli Stati Uniti, sulla base della decisione di adeguatezza della Commissione europea sull'EU-U.S. Data Privacy Framework, a cui Google LLC aderisce, e delle clausole contrattuali standard.</p>
+    </section>
+
+      <h2>Diritti, conservazione e reclami</h2>
       <ul>
         <li>I dati generati dall'uso dell'app (impostazioni, contenuti salvati) restano sul dispositivo e vengono eliminati disinstallando l'app.</li>
         <li>Nessuna delle app richiede la creazione di un account: non esiste un profilo utente da richiedere o cancellare lato server.</li>
-        <li>Per qualsiasi domanda su un trattamento specifico, o per richiedere informazioni sui dati eventualmente raccolti dai servizi di terze parti elencati sopra, scrivere all'indirizzo in fondo alla pagina.</li>
+        <li>Ai sensi degli articoli 15-22 del GDPR si può chiedere l'accesso ai propri dati, la rettifica, la cancellazione, la limitazione del trattamento e la portabilità, e opporsi al trattamento basato sul legittimo interesse. Il consenso agli annunci si revoca dalla voce "Consenso pubblicità" nelle Impostazioni dell'app, con la stessa facilità con cui è stato dato; la revoca non rende illecito il trattamento fatto prima.</li>
+        <li>Chi ritiene che il trattamento violi la normativa può proporre reclamo al <strong>Garante per la protezione dei dati personali</strong> (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a>) o all'autorità di controllo del paese in cui vive.</li>
       </ul>
     </section>
 
     <section id="minori">
       <h2>Minori</h2>
-      <p>Le app della suite non sono dirette a un pubblico di minori di 13 anni e non raccolgono consapevolmente dati identificativi da questa fascia di età.</p>
+      <p>Le app della suite non sono rivolte ai minori di 14 anni e non raccolgono consapevolmente dati che li riguardano. In Italia 14 anni è l'età minima per dare da soli il consenso ai servizi online (art. 2-quinquies del Codice privacy); in altri paesi dell'UE può arrivare a 16 anni: sotto questa età il consenso agli annunci personalizzati va dato da chi esercita la responsabilità genitoriale.</p>
     </section>
 
     <section id="modifiche">
@@ -737,7 +750,7 @@
       <div class="contact-box">
         <p style="margin:0; color:var(--text-2)">Per domande su questa informativa o sul trattamento dei dati in una delle app IAppsCL:</p>
         <dl>
-          <dt>Sviluppatore</dt><dd>Luigi Casella</dd>
+          <dt>Titolare</dt><dd>Luigi Casella</dd>
           <dt>Email</dt><dd><a href="mailto:IAppsCL@gmail.com">IAppsCL@gmail.com</a></dd>
         </dl>
       </div>
