@@ -354,7 +354,7 @@
         <div class="sub">Suite di app IAppsCL &middot; Luigi Casella</div>
       </div>
     </div>
-    <div class="updated">Ultimo aggiornamento: 16 ottobre 2026</div>
+    <div class="updated">Ultimo aggiornamento: 21 ottobre 2026</div>
   </div>
 </header>
 
@@ -379,6 +379,8 @@
     <a class="app-link" href="#numaze"><span class="dot" style="background:#F08A1C"></span>Numaze</a>
     <a class="app-link" href="#lumen"><span class="dot" style="background:#4AF0FF"></span>Lumen</a>
     <a class="app-link" href="#applock"><span class="dot" style="background:#3949AB"></span>AppLock</a>
+    <a class="app-link" href="#ausculto"><span class="dot" style="background:#46F0B4"></span>Ausculto</a>
+    <a class="app-link" href="#pulsix"><span class="dot" style="background:#F5C400"></span>Pulsix</a>
         <a href="#titolare">Titolare e basi giuridiche</a>
     Diritti e reclami</a>
     <a href="#minori">Minori</a>
@@ -779,6 +781,54 @@
       </div>
       <p>L'app è gratuita e blocca fino a 3 app. Un banner compare in fondo alla schermata di sblocco, lontano dai tasti. Un video facoltativo dà per 24 ore app bloccabili illimitate e niente banner. Mai annunci a schermo intero. Nessun acquisto in-app.</p>
     </section>
+    <section class="app-card" id="ausculto">
+      <h2>Ausculto <span class="tag">net.iappscl.ausculto</span></h2>
+      <p>Stetoscopio per le macchine di casa: con microfono e accelerometro impara il suono e la vibrazione di una macchina quando sta bene e, negli ascolti successivi, segnala se qualcosa è cambiato. Comprende spettrogramma, vibrometro, contagiri e livella. Tutte le analisi si fanno sul telefono. Non è uno strumento di misura certificato.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">RECORD_AUDIO<br>MODIFY_AUDIO_SETTINGS</td><td>Per ascoltare la macchina durante un controllo avviato dall'utente o con lo spettrogramma. Il microfono non resta mai acceso in background e l'audio non lascia il telefono.</td></tr>
+        <tr><td class="perm-name">HIGH_SAMPLING_RATE_SENSORS</td><td>Per leggere l'accelerometro abbastanza velocemente da misurare le vibrazioni.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione a fine ascolto, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare il video pubblicitario. Le analisi non usano la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Macchine, impronte, risultati dei controlli e preferenze sono salvati nella memoria locale dell'app; per l'ascolto a confronto restano anche brevi registrazioni a bassa qualità delle impronte e degli ultimi 10 ascolti di ogni macchina, poi cancellate da sole. Tutto si può eliminare dall'app e può essere incluso nel backup automatico di Android dell'account Google dell'utente. Nessun account. Il carattere Bricolage Grotesque è incluso nell'app con licenza SIL Open Font License 1.1. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/ausculto/" target="_blank" rel="noopener">iappscl-privacy/ausculto</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa</span>
+      </div>
+      <p>L'app è gratuita con 2 macchine, spettrogramma e livella. Un video facoltativo sblocca Premium (macchine illimitate, vibrometro, contagiri e ascolto a confronto) fino alla chiusura dell'app. Niente banner e niente annunci a schermo intero. Nessun acquisto in-app.</p>
+    </section>
+    <section class="app-card" id="pulsix">
+      <h2>Pulsix <span class="tag">net.iappscl.pulsix</span></h2>
+      <p>Gioco d'azione a ritmo: una sfera d'acciaio corre sui binari di una fabbrica e si fa saltare e scivolare a tempo di musica. Un Viaggio di 5 mondi da 8 brani, un Brano del giorno uguale per tutti e una modalità Senza fine. Musica e percorsi nascono sul telefono.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Per il promemoria giornaliero, solo se l'utente lo attiva dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Per rimettere in programma il promemoria dopo un riavvio.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione nel gioco, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare gli annunci pubblicitari. Il gioco in sé non usa la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Stelle dei brani, mondi aperti, brani del giorno, serie di giorni, record e preferenze (lingua, musica, effetti, vibrazione, promemoria, taratura del tempo) sono salvati nella memoria locale dell'app, finché non vengono azzerati o cancellati i dati dell'app. Possono essere inclusi nel backup automatico di Android dell'account Google dell'utente. Nessun account. Il carattere Chakra Petch è incluso nell'app con licenza SIL Open Font License 1.1. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/pulsix/" target="_blank" rel="noopener">iappscl-privacy/pulsix</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
+      </div>
+      <p>Il gioco è gratuito. Un video pubblicitario facoltativo fa continuare una corsa dopo una caduta o apre per sempre il mondo successivo del Viaggio. Dopo il brano del giorno e ogni tanto tra un brano e l'altro può comparire un annuncio a schermo intero, mai durante il gioco e mai nei primi giorni d'uso. Nessun acquisto in-app.</p>
+    </section>
 
 
     <hr class="rule">
@@ -834,7 +884,7 @@
 </div>
 
 <footer class="page">
-  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Avvisami, TrovAuto, Bubbles, Rec&amp;Play, Blokko, Gravix, Relaxx, Trip Friend, 3D-Body, Legami, Numaze, Lumen, AppLock sono app indipendenti sviluppate da Luigi Casella.
+  IAppsCL &middot; xMeteo, Don't Call!, OneTool, Salva Cena, Avvisami, TrovAuto, Bubbles, Rec&amp;Play, Blokko, Gravix, Relaxx, Trip Friend, 3D-Body, Legami, Numaze, Lumen, AppLock, Ausculto, Pulsix sono app indipendenti sviluppate da Luigi Casella.
 </footer>
 
 </body>
