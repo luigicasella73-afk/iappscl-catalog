@@ -77,7 +77,6 @@ body:has(.shell) nav.toc a.on { background: var(--d-accent-soft, rgba(255, 138, 
   box-shadow: 0 4px 14px rgba(0, 0, 0, .35); cursor: pointer; opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .2s, transform .2s;
 }
 .to-top.on { opacity: 1; transform: none; pointer-events: auto; }
-.xbar { text-decoration: overline; text-decoration-thickness: .09em; text-underline-offset: 0; }   /* xMeteo: la x con la barretta sopra */
 
 /* ---------------------------------------------------------------- niente scorrimento orizzontale sul telefono */
 html, body { overflow-x: clip; max-width: 100%; }
