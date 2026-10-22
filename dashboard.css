@@ -100,3 +100,16 @@ body:has(.shell) footer.page { text-align: center; }   /* piè di pagina centrat
   body:has(.shell) table.perm td { border: 0 !important; padding: 0 !important; }
   body:has(.shell) table.perm td.perm-name { margin-bottom: 4px; }
 }
+/* sul telefono: meno spazio sopra e sotto la barra delle app, e scorrimento libero e fluido (niente scatti) */
+@media (max-width: 860px) {
+  body:has(.shell) header { padding-bottom: 18px; margin-bottom: 6px; }
+  body:has(.shell) .shell { row-gap: 0; }
+  body:has(.shell) nav.toc { margin-bottom: 14px; scroll-snap-type: none; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+  body:has(.shell) nav.toc a { scroll-snap-align: none; }
+}
+/* sul telefono: la barra non si vede (niente fondo né bordo), restano solo i pulsanti, arrotondati */
+@media (max-width: 860px) {
+  body:has(.shell) nav.toc { background: transparent; border: 0; backdrop-filter: none; -webkit-backdrop-filter: none; box-shadow: none; }
+  body:has(.shell) nav.toc a { border-radius: 999px; background: var(--surface); box-shadow: 0 2px 8px rgba(0, 0, 0, .18); }
+  body:has(.shell) nav.toc a.on { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
+}
