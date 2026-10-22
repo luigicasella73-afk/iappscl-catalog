@@ -88,3 +88,4 @@ body:has(.shell) .perm-name { white-space: normal; }
 @media (max-width: 860px) { body:has(.shell) table colgroup col:first-child, body:has(.shell) td.perm-name { width: 44%; } }
 body:has(.grid) .thumbs { max-width: 100%; }
 @media (max-width: 860px) { body:has(.shell) nav.toc { border-radius: 0; border-left: 0; border-right: 0; } }   /* barra delle app: rettangolare, da bordo a bordo */
+@media (max-width: 860px) { body:has(.shell) nav.toc { -webkit-mask-image: none; mask-image: none; } body:has(.shell) nav.toc a { border-radius: 0; } }   /* barra e voci rettangolari, senza sfumature ai lati */
