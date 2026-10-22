@@ -22,5 +22,5 @@
   btn.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
   document.body.appendChild(btn);
   // visibile dopo un po' di scorrimento, nascosto in fondo per non coprire il piè di pagina
-  window.addEventListener("scroll", function () { var end = window.innerHeight + window.scrollY > document.documentElement.scrollHeight - 90; btn.classList.toggle("on", window.scrollY > 600 && !end); if (end && links.length) mark(links[links.length - 1].getAttribute("href").slice(1)); }, { passive: true });
+  window.addEventListener("scroll", function () { toc.classList.toggle("stuck", toc.getBoundingClientRect().top <= 1); var end = window.innerHeight + window.scrollY > document.documentElement.scrollHeight - 90; btn.classList.toggle("on", window.scrollY > 600 && !end); if (end && links.length) mark(links[links.length - 1].getAttribute("href").slice(1)); }, { passive: true });
 })();

@@ -113,3 +113,10 @@ body:has(.shell) footer.page { text-align: center; }   /* piè di pagina centrat
   body:has(.shell) nav.toc a { border-radius: 999px; background: var(--surface); box-shadow: 0 2px 8px rgba(0, 0, 0, .18); }
   body:has(.shell) nav.toc a.on { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
 }
+/* la barra c'è di nuovo ma ha il colore dello sfondo: copre il testo che scorre sotto senza vedersi */
+@media (max-width: 860px) {
+  body:has(.shell) nav.toc { background: var(--bg); }
+}
+@media (max-width: 860px) {
+  body:has(.shell) nav.toc:not(.stuck) { background: transparent; }   /* ferma sotto il titolo si fonde con la sfumatura in alto */
+}
