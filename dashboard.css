@@ -49,7 +49,7 @@ body:has(.grid) a { color: #FF8A2A; }
 body:has(.shell) { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 500;
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 70%, #3A5A9A) 0, var(--bg) 460px) no-repeat, var(--bg); }
 body:has(.shell) h1, body:has(.shell) h2, body:has(.shell) h3 { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 700; }
-body:has(.shell) .app-card, body:has(.shell) .contact-box, body:has(.shell) .toc { border-radius: 18px; }
+body:has(.shell) .app-card, body:has(.shell) .contact-box { border-radius: 18px; }
 body:has(.shell) .lede, body:has(.shell) .intro, body:has(.shell) .sub, body:has(.shell) .updated, body:has(.shell) .label { font-family: "Chakra Petch", system-ui, sans-serif; }
 body:has(.grid) .sort-bar { flex-wrap: wrap; } body:has(.grid) .sort-btn, body:has(.grid) .sort-bar span { white-space: nowrap; }   /* la freccia resta sulla stessa riga di "Crescente" */
 body:has(.grid) #sort-dir { font-size: 1rem; line-height: 1; padding: 5px 12px; }
@@ -87,3 +87,4 @@ body:has(.shell) td, body:has(.shell) th, body:has(.shell) .perm-name, body:has(
 body:has(.shell) .perm-name { white-space: normal; }
 @media (max-width: 860px) { body:has(.shell) table colgroup col:first-child, body:has(.shell) td.perm-name { width: 44%; } }
 body:has(.grid) .thumbs { max-width: 100%; }
+@media (max-width: 860px) { body:has(.shell) nav.toc { border-radius: 0; border-left: 0; border-right: 0; } }   /* barra delle app: rettangolare, da bordo a bordo */
