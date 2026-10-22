@@ -89,3 +89,4 @@ body:has(.grid) .thumbs { max-width: 100%; }
 @media (max-width: 860px) { body:has(.shell) nav.toc { border-radius: 0; border-left: 0; border-right: 0; } }   /* barra delle app: rettangolare, da bordo a bordo */
 @media (max-width: 860px) { body:has(.shell) nav.toc { -webkit-mask-image: none; mask-image: none; } body:has(.shell) nav.toc a { border-radius: 0; } }   /* barra e voci rettangolari, senza sfumature ai lati */
 body:has(.shell) .shell { padding-bottom: 0; } body:has(.shell) main section:last-of-type { margin-bottom: 20px; } body:has(.shell) footer.page { margin-top: 0; padding: 18px 24px 28px; }   /* meno spazio in fondo */
+body:has(.shell) footer.page { text-align: center; }   /* piè di pagina centrato */
