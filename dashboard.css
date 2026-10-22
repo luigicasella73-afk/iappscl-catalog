@@ -90,3 +90,13 @@ body:has(.grid) .thumbs { max-width: 100%; }
 @media (max-width: 860px) { body:has(.shell) nav.toc { -webkit-mask-image: none; mask-image: none; } body:has(.shell) nav.toc a { border-radius: 0; } }   /* barra e voci rettangolari, senza sfumature ai lati */
 body:has(.shell) .shell { padding-bottom: 0; } body:has(.shell) main section:last-of-type { margin-bottom: 20px; } body:has(.shell) footer.page { margin-top: 0; padding: 18px 24px 28px; }   /* meno spazio in fondo */
 body:has(.shell) footer.page { text-align: center; }   /* piè di pagina centrato */
+/* sul telefono la tabella dei permessi diventa un elenco: nome del permesso sopra, descrizione sotto (niente sovrapposizioni) */
+@media (max-width: 860px) {
+  body:has(.shell) table.perm, body:has(.shell) table.perm tbody, body:has(.shell) table.perm tr, body:has(.shell) table.perm td { display: block; width: 100% !important; }
+  body:has(.shell) table.perm thead, body:has(.shell) table.perm tr:has(th) { display: none; }
+  body:has(.shell) table.perm tr:has(th) + tr { padding-top: 4px; }
+  body:has(.shell) table.perm tr { padding: 12px 0; border-bottom: 1px solid var(--border); }
+  body:has(.shell) table.perm tr:last-child { border-bottom: 0; }
+  body:has(.shell) table.perm td { border: 0 !important; padding: 0 !important; }
+  body:has(.shell) table.perm td.perm-name { margin-bottom: 4px; }
+}
