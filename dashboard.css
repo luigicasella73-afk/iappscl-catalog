@@ -1,0 +1,53 @@
+/* Stile "Dashboard" (come l'app IAppsCL Dashboard) per catalogo e informativa generale: grafite con riflesso blu
+   in alto, schede arrotondate, accento arancio, carattere Chakra Petch. Il carattere è nel sito (fonts/, licenza OFL)
+   e non arriva da Google Fonts, per non passare indirizzi IP a terzi. Ridefinisce solo colori e caratteri:
+   i testi delle pagine restano quelli originali. */
+@font-face { font-family: "Chakra Petch"; src: url("fonts/chakrapetch-medium.ttf") format("truetype"); font-weight: 400 600; font-display: swap; }
+@font-face { font-family: "Chakra Petch"; src: url("fonts/chakrapetch-bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+/* ---------------------------------------------------------------- catalogo (index.html): sempre scuro */
+:root:root:root {
+  --bg-gradient: linear-gradient(180deg, #18243A 0, #0E1014 520px);
+  --surface: #171A20; --text: #ECEEF2; --text-muted: #8C94A3; --border: #272C36;
+  --chip-bg: rgba(255, 138, 42, .16); --chip-text: #FF8A2A;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35);
+}
+body.catalog, body:has(.grid) { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 500; background-color: #0E1014; }
+body:has(.grid) .card { border-radius: 18px; }
+body:has(.grid) .icon { border-radius: 14px; }
+body:has(.grid) .brand span { font-weight: 700; }
+body:has(.grid) .category h3 { font-size: .82rem; text-transform: uppercase; letter-spacing: .14em; color: #8C94A3; padding-left: 12px; border-left: 3px solid #FF8A2A; }
+body:has(.grid) .category h3 small { font-size: .82rem; color: #8C94A3; }
+body:has(.grid) .store { background: rgba(70, 210, 124, .14); color: #46D27C; }
+body:has(.grid) .store.soon { background: rgba(255, 138, 42, .16); color: #FF8A2A; }
+body:has(.grid) .sort-btn { border-radius: 999px; font-family: inherit; }
+body:has(.grid) #sort-date:checked ~ .sort-bar label[for="sort-date"],
+body:has(.grid) #sort-alpha:checked ~ .sort-bar label[for="sort-alpha"] { background: #FF8A2A; color: #1A0E04; border-color: #FF8A2A; }
+body:has(.grid) .thumbs img { border-radius: 10px; }
+body:has(.grid) a { color: #FF8A2A; }
+
+/* ---------------------------------------------------------------- informativa generale (privacy.html): chiaro e scuro */
+:root:root:root:has(.shell) {
+  --bg: #0E1014; --surface: #171A20; --surface-2: #1F232B; --border: #272C36;
+  --text: #ECEEF2; --text-2: #A7AEBB; --text-3: #8C94A3;
+  --accent: #FF8A2A; --accent-ink: #FFAA62; --warm: #FFB547; --warm-bg: #2B2411; --code-bg: #1F232B;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35);
+}
+@media (prefers-color-scheme: light) {
+  :root:root:root:has(.shell):not([data-theme="dark"]) {
+    --bg: #F3F4F6; --surface: #FFFFFF; --surface-2: #ECEEF2; --border: #DFE2E8;
+    --text: #14171C; --text-2: #4A5260; --text-3: #5E6674;
+    --accent: #C9560B; --accent-ink: #A54606; --warm: #B26600; --warm-bg: #F6ECD8; --code-bg: #ECEEF2;
+    --shadow: 0 1px 2px rgba(20, 30, 50, .06);
+  }
+}
+:root:root:root:has(.shell)[data-theme="light"] {
+  --bg: #F3F4F6; --surface: #FFFFFF; --surface-2: #ECEEF2; --border: #DFE2E8;
+  --text: #14171C; --text-2: #4A5260; --text-3: #5E6674;
+  --accent: #C9560B; --accent-ink: #A54606; --warm: #B26600; --warm-bg: #F6ECD8; --code-bg: #ECEEF2;
+}
+body:has(.shell) { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 500;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 70%, #3A5A9A) 0, var(--bg) 460px) no-repeat, var(--bg); }
+body:has(.shell) h1, body:has(.shell) h2, body:has(.shell) h3 { font-family: "Chakra Petch", system-ui, sans-serif; font-weight: 700; }
+body:has(.shell) .app-card, body:has(.shell) .contact-box, body:has(.shell) .toc { border-radius: 18px; }
+body:has(.shell) .lede, body:has(.shell) .intro, body:has(.shell) .sub, body:has(.shell) .updated, body:has(.shell) .label { font-family: "Chakra Petch", system-ui, sans-serif; }
