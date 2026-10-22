@@ -21,5 +21,6 @@
   btn.className = "to-top"; btn.type = "button"; btn.textContent = "↑"; btn.setAttribute("aria-label", "Torna su");
   btn.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
   document.body.appendChild(btn);
-  window.addEventListener("scroll", function () { btn.classList.toggle("on", window.scrollY > 600); }, { passive: true });
+  // visibile dopo un po' di scorrimento, nascosto in fondo per non coprire il piè di pagina
+  window.addEventListener("scroll", function () { var end = window.innerHeight + window.scrollY > document.documentElement.scrollHeight - 90; btn.classList.toggle("on", window.scrollY > 600 && !end); }, { passive: true });
 })();
