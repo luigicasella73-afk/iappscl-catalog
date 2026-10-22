@@ -52,3 +52,4 @@ body:has(.shell) h1, body:has(.shell) h2, body:has(.shell) h3 { font-family: "Ch
 body:has(.shell) .app-card, body:has(.shell) .contact-box, body:has(.shell) .toc { border-radius: 18px; }
 body:has(.shell) .lede, body:has(.shell) .intro, body:has(.shell) .sub, body:has(.shell) .updated, body:has(.shell) .label { font-family: "Chakra Petch", system-ui, sans-serif; }
 body:has(.grid) .sort-bar { flex-wrap: wrap; } body:has(.grid) .sort-btn, body:has(.grid) .sort-bar span { white-space: nowrap; }   /* la freccia resta sulla stessa riga di "Crescente" */
+body:has(.grid) #sort-dir { font-size: 1rem; line-height: 1; padding: 5px 12px; }

@@ -153,7 +153,7 @@
     <span>Ordina per:</span>
     <label class="sort-btn" for="sort-alpha">Alfabetico</label>
     <label class="sort-btn" for="sort-date">Data</label>
-    <button type="button" class="sort-btn" id="sort-dir" title="Inverti ordine">↑ Crescente</button>
+    <button type="button" class="sort-btn" id="sort-dir" title="Crescente" aria-label="Crescente">↑</button>
   </div>
 
   <div id="grid">
@@ -1144,7 +1144,7 @@
     var list = document.getElementById('sort-alpha').checked ? alphabetical : chronological;
     if (!ascending) list = list.slice().reverse();
     applyOrder(list);
-    dirBtn.textContent = ascending ? '↑ Crescente' : '↓ Decrescente';
+    dirBtn.textContent = ascending ? '↑' : '↓'; dirBtn.title = dirBtn.ariaLabel = ascending ? 'Crescente' : 'Decrescente';
   }
   document.getElementById('sort-alpha').addEventListener('change', updateSort);
   document.getElementById('sort-date').addEventListener('change', updateSort);
