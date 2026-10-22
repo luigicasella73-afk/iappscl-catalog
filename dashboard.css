@@ -60,7 +60,7 @@ body:has(.shell) main section { scroll-margin-top: 76px; }
 body:has(.shell) nav.toc a.on { background: var(--d-accent-soft, rgba(255, 138, 42, .16)); color: var(--accent); border-left-color: var(--accent); }
 @media (max-width: 860px) {
   body:has(.shell) nav.toc {
-    position: sticky; top: 0; z-index: 20; margin: 0 -16px 18px; padding: 10px 16px;
+    position: sticky; top: 0; z-index: 20; margin: 0 -24px 18px; padding: 10px 24px;
     background: color-mix(in srgb, var(--bg) 97%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     scroll-snap-type: x proximity; scroll-padding-inline: 16px; overscroll-behavior-x: contain; scrollbar-width: none;
@@ -80,11 +80,12 @@ body:has(.shell) nav.toc a.on { background: var(--d-accent-soft, rgba(255, 138, 
 
 /* ---------------------------------------------------------------- niente scorrimento orizzontale sul telefono */
 html, body { overflow-x: clip; max-width: 100%; }
-body:has(.shell) .shell, body:has(.shell) main, body:has(.shell) section { min-width: 0; max-width: 100%; }
+body:has(.shell) main, body:has(.shell) section { min-width: 0; max-width: 100%; }   /* .shell resta largo 1120 px e centrato */
 body:has(.shell) table { width: 100%; table-layout: fixed; }
 body:has(.shell) td, body:has(.shell) th, body:has(.shell) .perm-name, body:has(.shell) code, body:has(.shell) .tag { overflow-wrap: anywhere; word-break: break-word; }
-body:has(.shell) .perm-name { white-space: normal; }
+body:has(.shell) .perm-name, body:has(.shell) .perm-name * { white-space: normal !important; overflow-wrap: anywhere !important; }
 @media (max-width: 860px) { body:has(.shell) table colgroup col:first-child, body:has(.shell) td.perm-name { width: 44%; } }
 body:has(.grid) .thumbs { max-width: 100%; }
 @media (max-width: 860px) { body:has(.shell) nav.toc { border-radius: 0; border-left: 0; border-right: 0; } }   /* barra delle app: rettangolare, da bordo a bordo */
 @media (max-width: 860px) { body:has(.shell) nav.toc { -webkit-mask-image: none; mask-image: none; } body:has(.shell) nav.toc a { border-radius: 0; } }   /* barra e voci rettangolari, senza sfumature ai lati */
+body:has(.shell) .shell { padding-bottom: 0; } body:has(.shell) main section:last-of-type { margin-bottom: 20px; } body:has(.shell) footer.page { margin-top: 0; padding: 18px 24px 28px; }   /* meno spazio in fondo */
