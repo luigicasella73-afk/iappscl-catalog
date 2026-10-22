@@ -78,3 +78,12 @@ body:has(.shell) nav.toc a.on { background: var(--d-accent-soft, rgba(255, 138, 
 }
 .to-top.on { opacity: 1; transform: none; pointer-events: auto; }
 .xbar { text-decoration: overline; text-decoration-thickness: .09em; text-underline-offset: 0; }   /* xMeteo: la x con la barretta sopra */
+
+/* ---------------------------------------------------------------- niente scorrimento orizzontale sul telefono */
+html, body { overflow-x: clip; max-width: 100%; }
+body:has(.shell) .shell, body:has(.shell) main, body:has(.shell) section { min-width: 0; max-width: 100%; }
+body:has(.shell) table { width: 100%; table-layout: fixed; }
+body:has(.shell) td, body:has(.shell) th, body:has(.shell) .perm-name, body:has(.shell) code, body:has(.shell) .tag { overflow-wrap: anywhere; word-break: break-word; }
+body:has(.shell) .perm-name { white-space: normal; }
+@media (max-width: 860px) { body:has(.shell) table colgroup col:first-child, body:has(.shell) td.perm-name { width: 44%; } }
+body:has(.grid) .thumbs { max-width: 100%; }
