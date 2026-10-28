@@ -1,0 +1,109 @@
+{
+    "app":  [
+                {
+                    "nome":  "3D-Body",
+                    "pacchetto":  "net.iappscl.body3d",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "AppLock",
+                    "pacchetto":  "net.iappscl.applock",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Ausculto",
+                    "pacchetto":  "net.iappscl.ausculto",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Avvisami",
+                    "pacchetto":  "net.iappscl.avvisami",
+                    "stato":  "ATTESA_PUBBLICAZIONE"
+                },
+                {
+                    "nome":  "Blokko",
+                    "pacchetto":  "net.iappscl.blokko",
+                    "stato":  "ATTESA_PUBBLICAZIONE"
+                },
+                {
+                    "nome":  "Bubbles",
+                    "pacchetto":  "net.iappscl.bubbles",
+                    "stato":  "ATTESA_PUBBLICAZIONE"
+                },
+                {
+                    "nome":  "Don\u0027t Call!",
+                    "pacchetto":  "net.iappscl.dontcall",
+                    "stato":  "PUBBLICATA"
+                },
+                {
+                    "nome":  "Gravix",
+                    "pacchetto":  "net.iappscl.gravix",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Legami",
+                    "pacchetto":  "net.iappscl.legami",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Lumen",
+                    "pacchetto":  "net.iappscl.lumen",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Nìmbora",
+                    "pacchetto":  "net.iappscl.nimbora",
+                    "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Numaze",
+                    "pacchetto":  "net.iappscl.numaze",
+                    "stato":  "DISPONIBILE_TEST"
+                },
+                {
+                    "nome":  "OneTool",
+                    "pacchetto":  "net.iappscl.onetool",
+                    "stato":  "ATTESA_PUBBLICAZIONE"
+                },
+                {
+                    "nome":  "Pulsix",
+                    "pacchetto":  "net.iappscl.pulsix",
+                    "stato":  "DISPONIBILE_TEST"
+                },
+                {
+                    "nome":  "Rec\u0026Play",
+                    "pacchetto":  "net.iappscl.recplay",
+                    "stato":  "ATTESA_PUBBLICAZIONE"
+                },
+                {
+                    "nome":  "Relaxx",
+                    "pacchetto":  "net.iappscl.relaxx",
+                    "stato":  "DISPONIBILE_TEST"
+                },
+                {
+                    "nome":  "Salva Cena",
+                    "pacchetto":  "net.iappscl.salvacena",
+                    "stato":  "DISPONIBILE_TEST"
+                },
+                {
+                    "nome":  "Trip Friend",
+                    "pacchetto":  "net.iappscl.tripfriend",
+                    "stato":  "DISPONIBILE_TEST"
+                },
+                {
+                    "nome":  "TrovAuto",
+                    "pacchetto":  "net.iappscl.trovauto",
+                    "stato":  "PUBBLICATA"
+                },
+                {
+                    "nome":  "Vitrea",
+                    "pacchetto":  "net.iappscl.vitrea",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
+                    "nome":  "xMeteo",
+                    "pacchetto":  "net.iappscl.xmeteo",
+                    "stato":  "PUBBLICATA"
+                }
+            ]
+}
