@@ -98,7 +98,7 @@
                 {
                     "nome":  "Vitrea",
                     "pacchetto":  "net.iappscl.vitrea",
-                    "stato":  "IN_SVILUPPO"
+                    "stato":  "DISPONIBILE_TEST"
                 },
                 {
                     "nome":  "xMeteo",

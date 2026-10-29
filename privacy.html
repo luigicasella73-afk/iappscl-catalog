@@ -355,7 +355,7 @@
         <div class="sub">Suite di app IAppsCL &middot; Luigi Casella</div>
       </div>
     </div>
-    <div class="updated">Ultimo aggiornamento: 28 ottobre 2026</div>
+    <div class="updated">Ultimo aggiornamento: 29 ottobre 2026</div>
   </div>
 </header>
 
@@ -382,6 +382,7 @@
     <a class="app-link" href="#salvacena"><span class="dot" style="background:#C0392B"></span>Salva Cena</a>
     <a class="app-link" href="#tripfriend"><span class="dot" style="background:#F2B46C"></span>Trip Friend</a>
     <a class="app-link" href="#trovauto"><span class="dot" style="background:#0277BD"></span>TrovAuto</a>
+    <a class="app-link" href="#vitrea"><span class="dot" style="background:#C9A86A"></span>Vitrea</a>
     <a class="app-link" href="#xmeteo"><span class="dot" style="background:#0A6FA8"></span>x̄Meteo</a>
     <a href="#terze-parti">Servizi di terze parti</a>
     <a href="#titolare">Titolare e basi giuridiche</a>
@@ -857,6 +858,31 @@
         <span class="pill warm">Google AdMob — video con ricompensa</span>
       </div>
       <p>Lo sblocco Premium (apertura in Maps, cronologia, foto e note) si ottiene guardando un video pubblicitario per la sessione corrente. Nessun acquisto in-app.</p>
+    </section>
+
+    <section class="app-card" id="vitrea">
+      <h2>Vitrea <span class="tag">net.iappscl.vitrea</span></h2>
+      <p>Rompicapo di logica disegnato come una vetrata gotica: in ogni riga, colonna e vetro colorato va una sola gemma, e due gemme non si toccano mai. Sei vetrate da 12 finestre, una Vetrata del giorno uguale per tutti e una Bottega con grandezza e difficoltà a scelta. I rompicapi sono inclusi nell'app; grafica e musica nascono sul telefono.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Per il promemoria giornaliero, solo se l'utente lo attiva.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Per rimettere in programma il promemoria dopo un riavvio.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione nel gioco, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare gli annunci pubblicitari. Il gioco in sé non usa la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Finestre risolte con stelle e tempi, vetrate aperte, vetrate del giorno, serie di giorni, aiuti rimasti, risultati della Bottega, partita in corso e preferenze (lingua, musica, effetti, vibrazione, promemoria, X automatiche, tempo) sono salvati nella memoria locale dell'app, finché non vengono azzerati o cancellati i dati dell'app. Possono essere inclusi nel backup automatico di Android dell'account Google dell'utente. Nessun account. I caratteri Cormorant Garamond e Alegreya Sans sono inclusi nell'app con licenza SIL Open Font License 1.1. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/vitrea/" target="_blank" rel="noopener">iappscl-privacy/vitrea</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
+      </div>
+      <p>Il gioco è gratuito. Un video pubblicitario facoltativo dà 3 aiuti quando sono finiti, ripara la vetrata dopo tre crepe (una volta per rompicapo) o apre subito, per sempre, una vetrata. Dopo la vetrata del giorno e ogni tre rompicapi finiti può comparire un annuncio a schermo intero, mai durante il gioco, mai nelle prime quattro finestre e mai nei primi giorni d'uso. Nessun acquisto in-app.</p>
     </section>
 
     <section class="app-card" id="xmeteo">
