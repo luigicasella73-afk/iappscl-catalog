@@ -26,11 +26,6 @@
                     "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
-                    "nome":  "Bricks",
-                    "pacchetto":  "net.iappscl.bricks",
-                    "stato":  "IN_SVILUPPO"
-                },
-                {
                     "nome":  "Bubbles",
                     "pacchetto":  "net.iappscl.bubbles",
                     "stato":  "ATTESA_PUBBLICAZIONE"
@@ -39,6 +34,11 @@
                     "nome":  "Don\u0027t Call!",
                     "pacchetto":  "net.iappscl.dontcall",
                     "stato":  "PUBBLICATA"
+                },
+                {
+                    "nome":  "Future Bricks",
+                    "pacchetto":  "net.iappscl.bricks",
+                    "stato":  "IN_SVILUPPO"
                 },
                 {
                     "nome":  "Gravix",
