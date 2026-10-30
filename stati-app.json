@@ -26,6 +26,11 @@
                     "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
+                    "nome":  "Bricks",
+                    "pacchetto":  "net.iappscl.bricks",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Bubbles",
                     "pacchetto":  "net.iappscl.bubbles",
                     "stato":  "ATTESA_PUBBLICAZIONE"
