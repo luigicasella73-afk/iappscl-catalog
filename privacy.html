@@ -355,7 +355,7 @@
         <div class="sub">Suite di app IAppsCL &middot; Luigi Casella</div>
       </div>
     </div>
-    <div class="updated">Ultimo aggiornamento: 30 ottobre 2026</div>
+    <div class="updated">Ultimo aggiornamento: 31 ottobre 2026</div>
   </div>
 </header>
 
@@ -370,8 +370,10 @@
     <a class="app-link" href="#blokko"><span class="dot" style="background:#4D7CFF"></span>Blokko</a>
     <a class="app-link" href="#bubbles"><span class="dot" style="background:#00897B"></span>Bubbles</a>
     <a class="app-link" href="#dontcall"><span class="dot" style="background:#1E8E5A"></span>Don't Call!</a>
+    <a class="app-link" href="#flipper"><span class="dot" style="background:#D9A84A"></span>Flipper</a>
     <a class="app-link" href="#future-bricks"><span class="dot" style="background:#FFA040"></span>Future Bricks</a>
     <a class="app-link" href="#gravix"><span class="dot" style="background:#22E0FF"></span>Gravix</a>
+    <a class="app-link" href="#labyrinth"><span class="dot" style="background:#C8502E"></span>Labyrinth</a>
     <a class="app-link" href="#legami"><span class="dot" style="background:#C8102E"></span>Legami</a>
     <a class="app-link" href="#lumen"><span class="dot" style="background:#4AF0FF"></span>Lumen</a>
     <a class="app-link" href="#nimbora"><span class="dot" style="background:#E2B65C"></span>Nìmbora</a>
@@ -572,6 +574,31 @@
       <p>Premium si sblocca solo guardando un video pubblicitario, per la sessione corrente. Nessun acquisto in-app: l'app non tratta dati di pagamento.</p>
     </section>
 
+    <section class="app-card" id="flipper">
+      <h2>Flipper <span class="tag">net.iappscl.flipper</span></h2>
+      <p>Flipper con tre tavoli in stile Art Déco (Gran Hotel, Transatlantico, Grattacielo), pensato per il telefono in verticale. Ogni tavolo ha tre "atti" che portano al multiball; una band swing suona dal vivo e i colpi a tempo di musica valgono doppio. C'è una sfida del giorno uguale per tutti. Tavoli, grafica e musica nascono sul telefono, senza server.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Per il promemoria della sfida del giorno, solo se l'utente lo attiva.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Per rimettere in programma il promemoria dopo un riavvio.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione nel gioco, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare gli annunci pubblicitari. Il gioco in sé non usa la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Record dei tavoli, tavoli aperti, sfide del giorno giocate, serie di giorni, consigli già visti e preferenze (lingua, musica, effetti, vibrazione, spinta scuotendo il telefono, promemoria) sono salvati nella memoria locale dell'app, finché non vengono azzerati o cancellati i dati dell'app. Possono essere inclusi nel backup automatico di Android dell'account Google dell'utente. Se la spinta scuotendo il telefono è attiva, l'accelerometro viene letto durante la partita e i valori non vengono salvati né inviati. Nessun account. I caratteri Limelight e Josefin Sans sono inclusi nell'app con licenza SIL Open Font License 1.1. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/flipper/" target="_blank" rel="noopener">iappscl-privacy/flipper</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
+      </div>
+      <p>Il gioco è gratuito. Un video pubblicitario facoltativo dà una palla in più a fine partita (una volta per partita) o apre subito, per sempre, un tavolo chiuso. Uscendo dalla fine di una partita, una volta ogni due partite, può comparire un annuncio a schermo intero, mai durante il gioco, mai a meno di tre minuti dal precedente e mai nei primi giorni d'uso. Nessun acquisto in-app. Nell'UE, SEE, Regno Unito e Svizzera il consenso agli annunci si chiede con il modulo di Google e si può cambiare o revocare dalla voce "Consenso pubblicità" delle Impostazioni.</p>
+    </section>
+
     <section class="app-card" id="future-bricks">
       <h2>Future Bricks <span class="tag">net.iappscl.bricks</span></h2>
       <p>Gioco d'azione futuristico in cui si rompono muri di mattoni colorati con una pallina: la pallina prende il colore dell'ultimo mattone rotto e spacca in catena quelli dello stesso colore, con colpi al plasma, laser, nemici volanti e varianti come portali e buchi neri. Cinque mondi da 12 muri, un Muro del giorno uguale per tutti e una modalità Senza fine. Muri, grafica e musica nascono sul telefono, senza server.</p>
@@ -617,6 +644,31 @@
         <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
       </div>
       <p>I livelli 1-3 sono gratuiti; guardando un video pubblicitario si sbloccano tutti i livelli e si tolgono gli altri annunci per la sessione corrente. Un video facoltativo permette di continuare una partita finita. Tra una partita e l'altra può comparire un annuncio a schermo intero, mai durante il gioco e mai nei primi giorni d'uso. Nessun acquisto in-app.</p>
+    </section>
+
+    <section class="app-card" id="labyrinth">
+      <h2>Labyrinth <span class="tag">net.iappscl.labyrinth</span></h2>
+      <p>Il gioco della pallina nel labirinto: si inclina il telefono e la pallina rotola fino all'uscita, evitando le buche. Cinque regioni del Mediterraneo antico da 12 labirinti ciascuna, con sabbia, marmo, correnti d'acqua, cancelli, buio e un Minotauro che insegue la pallina, più un labirinto del giorno uguale per tutti. Labirinti, grafica e musica nascono sul telefono, senza server.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Per il promemoria del labirinto del giorno, solo se l'utente lo attiva.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Per rimettere in programma il promemoria dopo un riavvio.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione nel gioco, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare gli annunci pubblicitari. Il gioco in sé non usa la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Labirinti finiti con stelle e tempi, regioni aperte, labirinti del giorno giocati, serie di giorni, consigli già visti e preferenze (lingua, musica, effetti, vibrazione, comando, sensibilità, filo d'oro, promemoria) sono salvati nella memoria locale dell'app, finché non vengono azzerati o cancellati i dati dell'app. Possono essere inclusi nel backup automatico di Android dell'account Google dell'utente. Con il comando a inclinazione il sensore di gravità viene letto durante la partita e i valori non vengono salvati né inviati; il sensore non richiede permessi. Nessun account. I caratteri Marcellus e Karla sono inclusi nell'app con licenza SIL Open Font License 1.1. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/labyrinth/" target="_blank" rel="noopener">iappscl-privacy/labyrinth</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
+      </div>
+      <p>Il gioco è gratuito. Un video pubblicitario facoltativo mostra per 10 secondi la strada verso l'uscita (il "filo d'Arianna") o apre subito, per sempre, una regione chiusa. Dopo il labirinto del giorno e ogni tre labirinti finiti può comparire un annuncio a schermo intero, mai durante il gioco, mai a meno di tre minuti dal precedente e mai nei primi giorni d'uso. Nessun acquisto in-app. Nell'UE, SEE, Regno Unito e Svizzera il consenso agli annunci si chiede con il modulo di Google e si può cambiare o revocare dalla voce "Consenso pubblicità" delle Impostazioni.</p>
     </section>
 
     <section class="app-card" id="legami">
