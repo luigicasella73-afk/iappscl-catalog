@@ -36,6 +36,11 @@
                     "stato":  "PUBBLICATA"
                 },
                 {
+                    "nome":  "Flipper",
+                    "pacchetto":  "net.iappscl.flipper",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Future Bricks",
                     "pacchetto":  "net.iappscl.bricks",
                     "stato":  "DISPONIBILE_TEST"
@@ -44,6 +49,11 @@
                     "nome":  "Gravix",
                     "pacchetto":  "net.iappscl.gravix",
                     "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Labyrinth",
+                    "pacchetto":  "net.iappscl.labyrinth",
+                    "stato":  "IN_SVILUPPO"
                 },
                 {
                     "nome":  "Legami",
