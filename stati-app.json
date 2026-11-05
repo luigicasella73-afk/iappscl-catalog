@@ -56,7 +56,7 @@
                     "stato":  "TEST_IN_CORSO"
                 },
                 {
-                    "nome":  "Intarsio",
+                    "nome":  "Inlay",
                     "pacchetto":  "net.iappscl.intarsio",
                     "stato":  "IN_SVILUPPO"
                 },
