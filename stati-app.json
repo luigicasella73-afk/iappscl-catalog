@@ -41,6 +41,11 @@
                     "stato":  "DISPONIBILE_TEST"
                 },
                 {
+                    "nome":  "Fondali",
+                    "pacchetto":  "net.iappscl.fondali",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Future Bricks",
                     "pacchetto":  "net.iappscl.bricks",
                     "stato":  "DISPONIBILE_TEST"
