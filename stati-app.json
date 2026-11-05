@@ -56,11 +56,6 @@
                     "stato":  "TEST_IN_CORSO"
                 },
                 {
-                    "nome":  "Inkfold",
-                    "pacchetto":  "net.iappscl.inkfold",
-                    "stato":  "IN_SVILUPPO"
-                },
-                {
                     "nome":  "Labyrinth",
                     "pacchetto":  "net.iappscl.labyrinth",
                     "stato":  "DISPONIBILE_TEST"
