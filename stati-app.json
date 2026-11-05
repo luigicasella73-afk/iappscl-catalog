@@ -56,6 +56,11 @@
                     "stato":  "TEST_IN_CORSO"
                 },
                 {
+                    "nome":  "Intarsio",
+                    "pacchetto":  "net.iappscl.intarsio",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Labyrinth",
                     "pacchetto":  "net.iappscl.labyrinth",
                     "stato":  "DISPONIBILE_TEST"
