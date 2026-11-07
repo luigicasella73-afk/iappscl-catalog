@@ -373,6 +373,7 @@
     <a class="app-link" href="#flipper"><span class="dot" style="background:#D9A84A"></span>Flipper</a>
     <a class="app-link" href="#future-bricks"><span class="dot" style="background:#FFA040"></span>Future Bricks</a>
     <a class="app-link" href="#gravix"><span class="dot" style="background:#22E0FF"></span>Gravix</a>
+    <a class="app-link" href="#inlay"><span class="dot" style="background:#B07A3C"></span>Inlay</a>
     <a class="app-link" href="#labyrinth"><span class="dot" style="background:#C8502E"></span>Labyrinth</a>
     <a class="app-link" href="#legami"><span class="dot" style="background:#C8102E"></span>Legami</a>
     <a class="app-link" href="#lumen"><span class="dot" style="background:#4AF0FF"></span>Lumen</a>
@@ -644,6 +645,31 @@
         <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
       </div>
       <p>I livelli 1-3 sono gratuiti; guardando un video pubblicitario si sbloccano tutti i livelli e si tolgono gli altri annunci per la sessione corrente. Un video facoltativo permette di continuare una partita finita. Tra una partita e l'altra può comparire un annuncio a schermo intero, mai durante il gioco e mai nei primi giorni d'uso. Nessun acquisto in-app.</p>
+    </section>
+
+    <section class="app-card" id="inlay">
+      <h2>Inlay <span class="tag">net.iappscl.inlay</span></h2>
+      <p>Rompicapo a blocchi con tessere di legno: si trascinano i pezzi su una tavola 8×8 e si riempiono righe e colonne per svuotarle. Partita classica senza fine, Bottega con livelli da superare liberando chiodi d'oro e sfida del giorno uguale per tutti. Pezzi, grafica e musica nascono sul telefono, senza server.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Per il promemoria della sfida del giorno, solo se l'utente lo attiva.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Per rimettere in programma il promemoria dopo un riavvio.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione nel gioco, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare gli annunci pubblicitari. Il gioco in sé non usa la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Record, livello della Bottega, sfide del giorno giocate, serie di giorni, partite in corso, consigli già visti e preferenze (lingua, musica, effetti, vibrazione, promemoria) sono salvati nella memoria locale dell'app, finché non vengono azzerati o cancellati i dati dell'app. Possono essere inclusi nel backup automatico di Android dell'account Google dell'utente. Nessun account. I caratteri Zilla Slab e Work Sans sono inclusi nell'app con licenza SIL Open Font License 1.1. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/inlay/" target="_blank" rel="noopener">iappscl-privacy/inlay</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
+      </div>
+      <p>Il gioco è gratuito. Un video pubblicitario facoltativo dà un'altra mossa indietro, due martelli o tre pezzi che entrano per continuare la partita. Alla fine di una partita e ogni due livelli della Bottega superati può comparire un annuncio a schermo intero, mai durante il gioco, mai a meno di tre minuti dal precedente e mai nei primi due giorni d'uso. Nessun acquisto in-app. Nell'UE, SEE, Regno Unito e Svizzera il consenso agli annunci si chiede con il modulo di Google e si può cambiare o revocare dalla voce "Consenso pubblicità" delle Impostazioni.</p>
     </section>
 
     <section class="app-card" id="labyrinth">
