@@ -3,17 +3,17 @@
                 {
                     "nome":  "3D-Body",
                     "pacchetto":  "net.iappscl.body3d",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "AppLock",
                     "pacchetto":  "net.iappscl.applock",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Ausculto",
                     "pacchetto":  "net.iappscl.ausculto",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Avvisami",
@@ -38,17 +38,17 @@
                 {
                     "nome":  "Flipper",
                     "pacchetto":  "net.iappscl.flipper",
-                    "stato":  "DISPONIBILE_TEST"
+                    "stato":  "TEST_IN_CORSO"
                 },
                 {
                     "nome":  "Future Bricks",
                     "pacchetto":  "net.iappscl.bricks",
-                    "stato":  "DISPONIBILE_TEST"
+                    "stato":  "TEST_IN_CORSO"
                 },
                 {
                     "nome":  "Gravix",
                     "pacchetto":  "net.iappscl.gravix",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Inlay",
@@ -63,22 +63,22 @@
                 {
                     "nome":  "Legami",
                     "pacchetto":  "net.iappscl.legami",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Lumen",
                     "pacchetto":  "net.iappscl.lumen",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Nìmbora",
                     "pacchetto":  "net.iappscl.nimbora",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Numaze",
                     "pacchetto":  "net.iappscl.numaze",
-                    "stato":  "DISPONIBILE_TEST"
+                    "stato":  "TEST_IN_CORSO"
                 },
                 {
                     "nome":  "Ochre",
@@ -103,7 +103,7 @@
                 {
                     "nome":  "Relaxx",
                     "pacchetto":  "net.iappscl.relaxx",
-                    "stato":  "DISPONIBILE_TEST"
+                    "stato":  "TEST_IN_CORSO"
                 },
                 {
                     "nome":  "Salva Cena",
@@ -113,7 +113,7 @@
                 {
                     "nome":  "Trip Friend",
                     "pacchetto":  "net.iappscl.tripfriend",
-                    "stato":  "DISPONIBILE_TEST"
+                    "stato":  "TEST_IN_CORSO"
                 },
                 {
                     "nome":  "TrovAuto",
@@ -123,7 +123,7 @@
                 {
                     "nome":  "Vitrea",
                     "pacchetto":  "net.iappscl.vitrea",
-                    "stato":  "DISPONIBILE_TEST"
+                    "stato":  "TEST_IN_CORSO"
                 },
                 {
                     "nome":  "xMeteo",
