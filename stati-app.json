@@ -111,6 +111,11 @@
                     "stato":  "DISPONIBILE_TEST"
                 },
                 {
+                    "nome":  "SlotRace",
+                    "pacchetto":  "net.iappscl.slotrace",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Trip Friend",
                     "pacchetto":  "net.iappscl.tripfriend",
                     "stato":  "TEST_IN_CORSO"
