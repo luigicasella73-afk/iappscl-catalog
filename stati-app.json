@@ -48,7 +48,7 @@
                 {
                     "nome":  "Gravix",
                     "pacchetto":  "net.iappscl.gravix",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Inlay",
@@ -68,7 +68,7 @@
                 {
                     "nome":  "Lumen",
                     "pacchetto":  "net.iappscl.lumen",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Nìmbora",
