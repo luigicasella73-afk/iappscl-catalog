@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="it">
 <head>
 <meta charset="utf-8">
@@ -355,7 +355,7 @@
         <div class="sub">Suite di app IAppsCL &middot; Luigi Casella</div>
       </div>
     </div>
-    <div class="updated">Ultimo aggiornamento: 7 novembre 2026</div>
+    <div class="updated">Ultimo aggiornamento: 12 novembre 2026</div>
   </div>
 </header>
 
@@ -385,6 +385,7 @@
     <a class="app-link" href="#recplay"><span class="dot" style="background:#D81B60"></span>Rec&amp;Play</a>
     <a class="app-link" href="#relaxx"><span class="dot" style="background:#FFB59E"></span>Relaxx</a>
     <a class="app-link" href="#salvacena"><span class="dot" style="background:#C0392B"></span>Salva Cena</a>
+    <a class="app-link" href="#slotrace"><span class="dot" style="background:#D8241C"></span>SlotRace</a>
     <a class="app-link" href="#tripfriend"><span class="dot" style="background:#F2B46C"></span>Trip Friend</a>
     <a class="app-link" href="#trovauto"><span class="dot" style="background:#0277BD"></span>TrovAuto</a>
     <a class="app-link" href="#vitrea"><span class="dot" style="background:#C9A86A"></span>Vitrea</a>
@@ -936,6 +937,31 @@
         <span class="pill warm">Google AdMob — video con ricompensa</span>
       </div>
       <p>Il video sblocca per 24 ore il catalogo completo, la dispensa e gli archivi personali, invece del campione gratuito.</p>
+    </section>
+
+    <section class="app-card" id="slotrace">
+      <h2>SlotRace <span class="tag">net.iappscl.slotrace</span></h2>
+      <p>Il gioco della pista elettrica delle macchinine: si tiene premuto il pulsante della manopola per accelerare e lo si lascia per frenare, senza uscire di pista in curva, contro tre avversari guidati dal gioco. Cinque stanze da 6 piste ciascuna, quattro auto da sbloccare con le stelle e un giro del giorno uguale per tutti. Piste, grafica e musica nascono sul telefono, senza server.</p>
+
+      <h3>Permessi e a cosa servono</h3>
+      <table class="perm">
+        <tr><th>Permesso</th><th>Uso</th></tr>
+        <tr><td class="perm-name">POST_NOTIFICATIONS</td><td>Per il promemoria serale del giro del giorno, solo se l'utente lo attiva.</td></tr>
+        <tr><td class="perm-name">RECEIVE_BOOT_COMPLETED</td><td>Per rimettere in programma il promemoria dopo un riavvio.</td></tr>
+        <tr><td class="perm-name">VIBRATE</td><td>Per la vibrazione nel gioco, disattivabile dalle Impostazioni.</td></tr>
+        <tr><td class="perm-name">INTERNET<br>ACCESS_NETWORK_STATE</td><td>Solo per caricare gli annunci pubblicitari. Il gioco in sé non usa la rete.</td></tr>
+        <tr><td class="perm-name">AD_ID<br>ACCESS_ADSERVICES_*</td><td>Solo per gli annunci pubblicitari AdMob.</td></tr>
+        <tr><td class="perm-name">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>Aggiunti dalla libreria AdMob per i suoi compiti interni; l'app non li usa.</td></tr>
+      </table>
+
+      <h3>Cosa resta sul dispositivo</h3>
+      <p>Piste corse con stelle e tempi migliori, auto sbloccate, giri del giorno giocati con le medaglie, serie di giorni, consigli già visti e preferenze (lingua, musica, effetti, vibrazione, promemoria) sono salvati nella memoria locale dell'app, finché non vengono azzerati o cancellati i dati dell'app. Possono essere inclusi nel backup automatico di Android dell'account Google dell'utente. Nessun account. I caratteri Righteous e Barlow sono inclusi nell'app con licenza SIL Open Font License 1.1; musica ed effetti sono creati dal gioco al momento. Informativa completa: <a href="https://luigicasella73-afk.github.io/iappscl-privacy/slotrace/" target="_blank" rel="noopener">iappscl-privacy/slotrace</a>.</p>
+
+      <h3>Monetizzazione</h3>
+      <div class="pill-row">
+        <span class="pill warm">Google AdMob — video con ricompensa e annunci a schermo intero</span>
+      </div>
+      <p>Il gioco è gratuito. Un video pubblicitario facoltativo permette di provare per una gara un'auto ancora bloccata o di ripetere una gara persa con il magnete potenziato. Fra una gara e l'altra ogni due gare, e tornando al menu dopo una gara, può comparire un annuncio a schermo intero, mai durante la gara, mai a meno di tre minuti dal precedente e mai nei primi due giorni d'uso. Nessun acquisto in-app. Nell'UE, SEE, Regno Unito e Svizzera il consenso agli annunci si chiede con il modulo di Google e si può cambiare o revocare dalla voce "Consenso pubblicità" delle Impostazioni.</p>
     </section>
 
     <section class="app-card" id="tripfriend">
