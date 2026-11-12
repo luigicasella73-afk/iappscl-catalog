@@ -71,6 +71,11 @@
                     "stato":  "PUBBLICATA"
                 },
                 {
+                    "nome":  "Motovia",
+                    "pacchetto":  "net.iappscl.motovia",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Nìmbora",
                     "pacchetto":  "net.iappscl.nimbora",
                     "stato":  "ATTESA_PUBBLICAZIONE"
