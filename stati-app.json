@@ -71,11 +71,6 @@
                     "stato":  "PUBBLICATA"
                 },
                 {
-                    "nome":  "Motovia",
-                    "pacchetto":  "net.iappscl.motovia",
-                    "stato":  "IN_SVILUPPO"
-                },
-                {
                     "nome":  "Nìmbora",
                     "pacchetto":  "net.iappscl.nimbora",
                     "stato":  "PUBBLICATA"
@@ -109,6 +104,11 @@
                     "nome":  "Relaxx",
                     "pacchetto":  "net.iappscl.relaxx",
                     "stato":  "TEST_IN_CORSO"
+                },
+                {
+                    "nome":  "Roadia",
+                    "pacchetto":  "net.iappscl.roadia",
+                    "stato":  "IN_SVILUPPO"
                 },
                 {
                     "nome":  "Salva Cena",
