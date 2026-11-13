@@ -3,7 +3,7 @@
                 {
                     "nome":  "3D-Body",
                     "pacchetto":  "net.iappscl.body3d",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "AppLock",
@@ -13,7 +13,7 @@
                 {
                     "nome":  "Ausculto",
                     "pacchetto":  "net.iappscl.ausculto",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Avvisami",
@@ -63,7 +63,7 @@
                 {
                     "nome":  "Legami",
                     "pacchetto":  "net.iappscl.legami",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Lumen",
@@ -78,7 +78,7 @@
                 {
                     "nome":  "Nìmbora",
                     "pacchetto":  "net.iappscl.nimbora",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Numaze",
