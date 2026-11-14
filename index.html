@@ -61,6 +61,7 @@
   .card.filtered,.category.filtered{display:none;}
   body:has(.grid) .filter-btn.active{background:#FF8A2A;color:#1A0E04;border-color:#FF8A2A;}
   .filter-bar span{white-space:nowrap;}
+  .sort-bar > span,.filter-bar > span{min-width:5.6rem;}
   .grid{
     display:grid;
     grid-template-columns:repeat(auto-fill, minmax(270px, 1fr));
@@ -158,13 +159,13 @@
   <input type="radio" name="sort" id="sort-alpha" checked>
   <input type="radio" name="sort" id="sort-date">
   <div class="sort-bar">
-    <span>Ordina per:</span>
+    <span>Ordinamento</span>
     <label class="sort-btn" for="sort-alpha">Nome</label>
     <label class="sort-btn" for="sort-date">Data</label>
     <button type="button" class="sort-btn" id="sort-dir" title="Crescente" aria-label="Crescente">↑</button>
   </div>
   <div class="filter-bar" id="filter-bar">
-    <span>Filtra per:</span>
+    <span>Filtri</span>
     <button type="button" class="sort-btn filter-btn active" data-filter="all" aria-pressed="true">Tutte</button>
     <button type="button" class="sort-btn filter-btn" data-filter="available" aria-pressed="false">Disponibili</button>
     <button type="button" class="sort-btn filter-btn" data-filter="soon" aria-pressed="false">Prossime uscite</button>
