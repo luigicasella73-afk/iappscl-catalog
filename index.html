@@ -62,6 +62,7 @@
   body:has(.grid) .filter-btn.active{background:#FF8A2A;color:#1A0E04;border-color:#FF8A2A;}
   .filter-bar span{white-space:nowrap;}
   .sort-bar > span,.filter-bar > span{min-width:5.6rem;}
+  .filter-bar > .filter-count{min-width:0;}
   .grid{
     display:grid;
     grid-template-columns:repeat(auto-fill, minmax(270px, 1fr));
@@ -169,6 +170,7 @@
     <button type="button" class="sort-btn filter-btn active" data-filter="all" aria-pressed="true">Tutte</button>
     <button type="button" class="sort-btn filter-btn" data-filter="available" aria-pressed="false">Disponibili</button>
     <button type="button" class="sort-btn filter-btn" data-filter="soon" aria-pressed="false">Prossime uscite</button>
+    <span class="filter-count" id="filter-count"></span>
   </div>
 
   <div id="grid">
@@ -1385,8 +1387,10 @@
       var n = sec.querySelector('h3 small');
       if (n) n.textContent = shown;
     });
+    document.getElementById("filter-count").textContent = "(" + document.querySelectorAll("#grid .card:not(.filtered)").length + ")";
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.filter); }); });
+  apply("all");
 })();
 
 // Numero di app nel sottotitolo contato dalle card presenti: resta giusto
