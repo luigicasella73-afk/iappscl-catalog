@@ -55,12 +55,14 @@
   #sort-alpha,#sort-date{position:absolute;opacity:0;pointer-events:none;}
   #sort-date:checked ~ .sort-bar label[for="sort-date"],
   #sort-alpha:checked ~ .sort-bar label[for="sort-alpha"]{background:var(--chip-bg);color:var(--chip-text);border-color:var(--chip-bg);}
-  .filter-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:-8px 0 20px;}
+  .filter-bar{display:flex;align-items:flex-start;gap:8px;flex-wrap:nowrap;margin:-8px 0 20px;}
   .filter-bar span{color:var(--text-muted);font-size:.8rem;}
   .filter-btn.active{background:var(--chip-bg);color:var(--chip-text);border-color:var(--chip-bg);}
   .card.filtered,.category.filtered{display:none;}
   body:has(.grid) .filter-btn.active{background:#FF8A2A;color:#1A0E04;border-color:#FF8A2A;}
   .filter-bar span{white-space:nowrap;}
+  .filter-bar > span{padding-top:7px;flex:none;}
+  .filter-opts{display:flex;flex-wrap:wrap;gap:8px;min-width:0;}
   .sort-bar > span,.filter-bar > span{min-width:5.6rem;}
   .grid{
     display:grid;
@@ -166,9 +168,11 @@
   </div>
   <div class="filter-bar" id="filter-bar">
     <span>Filtri <span id="filter-count"></span></span>
+    <div class="filter-opts">
     <button type="button" class="sort-btn filter-btn active" data-filter="all" aria-pressed="true">Tutte</button>
     <button type="button" class="sort-btn filter-btn" data-filter="available" aria-pressed="false">Disponibili</button>
     <button type="button" class="sort-btn filter-btn" data-filter="soon" aria-pressed="false">Prossime uscite</button>
+    </div>
   </div>
 
   <div id="grid">
