@@ -1,0 +1,135 @@
+{
+    "aggiornato":  "2026-11-17 19:17",
+    "app":  [
+                {
+                    "nome":  "3D-Body",
+                    "pacchetto":  "net.iappscl.body3d",
+                    "download":  17,
+                    "attivi":  11,
+                    "disinstallazioni":  0,
+                    "download30":  17,
+                    "dal":  "2026-10-25",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "AppLock",
+                    "pacchetto":  "net.iappscl.applock",
+                    "download":  17,
+                    "attivi":  14,
+                    "disinstallazioni":  0,
+                    "download30":  17,
+                    "dal":  "2026-10-25",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Avvisami",
+                    "pacchetto":  "net.iappscl.avvisami",
+                    "download":  18,
+                    "attivi":  7,
+                    "disinstallazioni":  0,
+                    "download30":  3,
+                    "dal":  "2026-09-26",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Blokko",
+                    "pacchetto":  "net.iappscl.blokko",
+                    "download":  18,
+                    "attivi":  6,
+                    "disinstallazioni":  0,
+                    "download30":  1,
+                    "dal":  "2026-10-09",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Bubbles",
+                    "pacchetto":  "net.iappscl.bubbles",
+                    "download":  22,
+                    "attivi":  7,
+                    "disinstallazioni":  0,
+                    "download30":  5,
+                    "dal":  "2026-09-26",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Don\u0027t Call!",
+                    "pacchetto":  "net.iappscl.dontcall",
+                    "download":  46,
+                    "attivi":  9,
+                    "disinstallazioni":  0,
+                    "download30":  20,
+                    "dal":  "2026-09-17",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Gravix",
+                    "pacchetto":  "net.iappscl.gravix",
+                    "download":  17,
+                    "attivi":  15,
+                    "disinstallazioni":  0,
+                    "download30":  17,
+                    "dal":  "2026-10-25",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Legami",
+                    "pacchetto":  "net.iappscl.legami",
+                    "download":  17,
+                    "attivi":  13,
+                    "disinstallazioni":  0,
+                    "download30":  17,
+                    "dal":  "2026-10-25",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Lumen",
+                    "pacchetto":  "net.iappscl.lumen",
+                    "download":  17,
+                    "attivi":  14,
+                    "disinstallazioni":  0,
+                    "download30":  17,
+                    "dal":  "2026-10-25",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "OneTool",
+                    "pacchetto":  "net.iappscl.onetool",
+                    "download":  19,
+                    "attivi":  2,
+                    "disinstallazioni":  0,
+                    "download30":  1,
+                    "dal":  "2026-09-21",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "Rec\u0026Play",
+                    "pacchetto":  "net.iappscl.recplay",
+                    "download":  34,
+                    "attivi":  11,
+                    "disinstallazioni":  0,
+                    "download30":  16,
+                    "dal":  "2026-10-09",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "TrovAuto",
+                    "pacchetto":  "net.iappscl.trovauto",
+                    "download":  27,
+                    "attivi":  7,
+                    "disinstallazioni":  0,
+                    "download30":  3,
+                    "dal":  "2026-09-20",
+                    "dati_al":  "2026-11-09"
+                },
+                {
+                    "nome":  "xMeteo",
+                    "pacchetto":  "net.iappscl.xmeteo",
+                    "download":  113,
+                    "attivi":  14,
+                    "disinstallazioni":  0,
+                    "download30":  78,
+                    "dal":  "2026-09-21",
+                    "dati_al":  "2026-11-09"
+                }
+            ]
+}
