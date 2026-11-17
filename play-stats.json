@@ -1,12 +1,12 @@
 {
-    "aggiornato":  "2026-11-17 19:21",
+    "aggiornato":  "2026-11-17 19:24",
     "app":  [
                 {
                     "nome":  "3D-Body",
                     "pacchetto":  "net.iappscl.body3d",
                     "download":  17,
                     "attivi":  11,
-                    "disinstallazioni":  5,
+                    "disinstallazioni":  6,
                     "download30":  17,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-09"
@@ -16,7 +16,7 @@
                     "pacchetto":  "net.iappscl.applock",
                     "download":  17,
                     "attivi":  14,
-                    "disinstallazioni":  5,
+                    "disinstallazioni":  3,
                     "download30":  17,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-09"
@@ -26,7 +26,7 @@
                     "pacchetto":  "net.iappscl.avvisami",
                     "download":  18,
                     "attivi":  7,
-                    "disinstallazioni":  16,
+                    "disinstallazioni":  11,
                     "download30":  3,
                     "dal":  "2026-09-26",
                     "dati_al":  "2026-11-09"
@@ -36,7 +36,7 @@
                     "pacchetto":  "net.iappscl.blokko",
                     "download":  18,
                     "attivi":  6,
-                    "disinstallazioni":  16,
+                    "disinstallazioni":  12,
                     "download30":  1,
                     "dal":  "2026-10-09",
                     "dati_al":  "2026-11-09"
@@ -46,7 +46,7 @@
                     "pacchetto":  "net.iappscl.bubbles",
                     "download":  22,
                     "attivi":  7,
-                    "disinstallazioni":  22,
+                    "disinstallazioni":  15,
                     "download30":  5,
                     "dal":  "2026-09-26",
                     "dati_al":  "2026-11-09"
@@ -56,7 +56,7 @@
                     "pacchetto":  "net.iappscl.dontcall",
                     "download":  46,
                     "attivi":  9,
-                    "disinstallazioni":  46,
+                    "disinstallazioni":  37,
                     "download30":  20,
                     "dal":  "2026-09-17",
                     "dati_al":  "2026-11-09"
@@ -66,7 +66,7 @@
                     "pacchetto":  "net.iappscl.gravix",
                     "download":  17,
                     "attivi":  15,
-                    "disinstallazioni":  4,
+                    "disinstallazioni":  2,
                     "download30":  17,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-09"
@@ -76,7 +76,7 @@
                     "pacchetto":  "net.iappscl.legami",
                     "download":  17,
                     "attivi":  13,
-                    "disinstallazioni":  2,
+                    "disinstallazioni":  4,
                     "download30":  17,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-09"
@@ -86,7 +86,7 @@
                     "pacchetto":  "net.iappscl.lumen",
                     "download":  17,
                     "attivi":  14,
-                    "disinstallazioni":  1,
+                    "disinstallazioni":  3,
                     "download30":  17,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-09"
@@ -96,7 +96,7 @@
                     "pacchetto":  "net.iappscl.onetool",
                     "download":  19,
                     "attivi":  2,
-                    "disinstallazioni":  23,
+                    "disinstallazioni":  17,
                     "download30":  1,
                     "dal":  "2026-09-21",
                     "dati_al":  "2026-11-09"
@@ -106,7 +106,7 @@
                     "pacchetto":  "net.iappscl.recplay",
                     "download":  34,
                     "attivi":  11,
-                    "disinstallazioni":  25,
+                    "disinstallazioni":  23,
                     "download30":  16,
                     "dal":  "2026-10-09",
                     "dati_al":  "2026-11-09"
@@ -116,7 +116,7 @@
                     "pacchetto":  "net.iappscl.trovauto",
                     "download":  27,
                     "attivi":  7,
-                    "disinstallazioni":  30,
+                    "disinstallazioni":  20,
                     "download30":  3,
                     "dal":  "2026-09-20",
                     "dati_al":  "2026-11-09"
@@ -126,7 +126,7 @@
                     "pacchetto":  "net.iappscl.xmeteo",
                     "download":  113,
                     "attivi":  14,
-                    "disinstallazioni":  130,
+                    "disinstallazioni":  99,
                     "download30":  78,
                     "dal":  "2026-09-21",
                     "dati_al":  "2026-11-09"
