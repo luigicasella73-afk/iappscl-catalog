@@ -1,0 +1,45 @@
+# Statistiche di Google Play per la IAppsCL Dashboard (20/11/2026).
+# Ogni 3 ore, o subito dal pulsante "Aggiorna" della Dashboard, scarica i report di Play Console con la chiave
+# dell'account di servizio (segreto PLAY_STATS_KEY), rifà i conti e pubblica play-stats.json nel ramo "play-stats".
+# Il ramo è separato da main, così il sito e gli script del PC non vengono toccati.
+name: Statistiche Play
+on:
+  schedule:
+    - cron: '23 */3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: play-stats
+  cancel-in-progress: false
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Europe/Rome
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scarica i report
+        env:
+          PLAY_STATS_KEY: ${{ secrets.PLAY_STATS_KEY }}
+        shell: bash
+        run: |
+          printf '%s' "$PLAY_STATS_KEY" > "$RUNNER_TEMP/chiave.json"
+          pkgs=$(pwsh -NoProfile -Command '(Get-Content stati-app.json -Raw | ConvertFrom-Json).app | Where-Object stato -eq PUBBLICATA | ForEach-Object pacchetto')
+          "$JAVA_HOME_21_X64/bin/java" .github/play-stats/PlayReports.java "$RUNNER_TEMP/chiave.json" "$RUNNER_TEMP/csv" $pkgs
+          rm -f "$RUNNER_TEMP/chiave.json"
+      - name: Calcola e pubblica
+        shell: bash
+        run: |
+          git fetch -q origin play-stats || true
+          mkdir -p "$RUNNER_TEMP/out"
+          git show origin/play-stats:play-stats.json > "$RUNNER_TEMP/out/play-stats.json" 2>/dev/null || true
+          pwsh -NoProfile -File .github/play-stats/calcola.ps1 -Csv "$RUNNER_TEMP/csv" -Stati stati-app.json -Dest "$RUNNER_TEMP/out/play-stats.json"
+          git config user.name "IAppsCL"
+          git config user.email "IAppsCL@gmail.com"
+          if git rev-parse -q --verify origin/play-stats >/dev/null; then git checkout -q -B play-stats origin/play-stats; else git checkout -q --orphan play-stats; git rm -rqf .; fi
+          cp "$RUNNER_TEMP/out/play-stats.json" play-stats.json
+          git add play-stats.json
+          git commit -q -m "Statistiche di Google Play per la Dashboard" || true
+          git push -q origin play-stats
