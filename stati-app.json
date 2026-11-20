@@ -141,6 +141,11 @@
                     "stato":  "TEST_IN_CORSO"
                 },
                 {
+                    "nome":  "Whirlwick",
+                    "pacchetto":  "net.iappscl.whirlwick",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "xMeteo",
                     "pacchetto":  "net.iappscl.xmeteo",
                     "stato":  "PUBBLICATA"
