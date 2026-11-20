@@ -1,5 +1,5 @@
 {
-    "aggiornato":  "2026-11-20 15:58",
+    "aggiornato":  "2026-11-20 16:14",
     "app":  [
                 {
                     "nome":  "3D-Body",
@@ -30,12 +30,12 @@
                 {
                     "nome":  "Ausculto",
                     "pacchetto":  "net.iappscl.ausculto",
-                    "download":  2,
+                    "download":  18,
                     "attivi":  6,
-                    "disinstallazioni":  0,
-                    "download_prec":  2,
+                    "disinstallazioni":  12,
+                    "download_prec":  18,
                     "attivi_prec":  6,
-                    "disinstallazioni_prec":  0,
+                    "disinstallazioni_prec":  12,
                     "download30":  2,
                     "dal":  "2026-11-03",
                     "dati_al":  "2026-11-16"
@@ -56,12 +56,12 @@
                 {
                     "nome":  "Blokko",
                     "pacchetto":  "net.iappscl.blokko",
-                    "download":  18,
+                    "download":  20,
                     "attivi":  4,
-                    "disinstallazioni":  14,
-                    "download_prec":  18,
+                    "disinstallazioni":  16,
+                    "download_prec":  20,
                     "attivi_prec":  4,
-                    "disinstallazioni_prec":  14,
+                    "disinstallazioni_prec":  16,
                     "download30":  1,
                     "dal":  "2026-10-09",
                     "dati_al":  "2026-11-16"
@@ -95,12 +95,12 @@
                 {
                     "nome":  "Gravix",
                     "pacchetto":  "net.iappscl.gravix",
-                    "download":  19,
+                    "download":  20,
                     "attivi":  11,
-                    "disinstallazioni":  8,
-                    "download_prec":  19,
+                    "disinstallazioni":  9,
+                    "download_prec":  20,
                     "attivi_prec":  11,
-                    "disinstallazioni_prec":  8,
+                    "disinstallazioni_prec":  9,
                     "download30":  19,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-16"
@@ -121,12 +121,12 @@
                 {
                     "nome":  "Lumen",
                     "pacchetto":  "net.iappscl.lumen",
-                    "download":  18,
+                    "download":  19,
                     "attivi":  9,
-                    "disinstallazioni":  9,
-                    "download_prec":  18,
+                    "disinstallazioni":  10,
+                    "download_prec":  19,
                     "attivi_prec":  10,
-                    "disinstallazioni_prec":  8,
+                    "disinstallazioni_prec":  9,
                     "download30":  18,
                     "dal":  "2026-10-25",
                     "dati_al":  "2026-11-16"
@@ -134,12 +134,12 @@
                 {
                     "nome":  "Nìmbora",
                     "pacchetto":  "net.iappscl.nimbora",
-                    "download":  3,
+                    "download":  16,
                     "attivi":  9,
-                    "disinstallazioni":  0,
-                    "download_prec":  3,
+                    "disinstallazioni":  7,
+                    "download_prec":  16,
                     "attivi_prec":  11,
-                    "disinstallazioni_prec":  0,
+                    "disinstallazioni_prec":  5,
                     "download30":  3,
                     "dal":  "2026-11-03",
                     "dati_al":  "2026-11-16"
@@ -160,12 +160,12 @@
                 {
                     "nome":  "Rec\u0026Play",
                     "pacchetto":  "net.iappscl.recplay",
-                    "download":  52,
+                    "download":  53,
                     "attivi":  17,
-                    "disinstallazioni":  35,
-                    "download_prec":  51,
+                    "disinstallazioni":  36,
+                    "download_prec":  52,
                     "attivi_prec":  16,
-                    "disinstallazioni_prec":  35,
+                    "disinstallazioni_prec":  36,
                     "download30":  34,
                     "dal":  "2026-10-09",
                     "dati_al":  "2026-11-16"
