@@ -56,6 +56,11 @@
                     "stato":  "PUBBLICATA"
                 },
                 {
+                    "nome":  "Gymatomy",
+                    "pacchetto":  "net.iappscl.gymatomy",
+                    "stato":  "IN_SVILUPPO"
+                },
+                {
                     "nome":  "Inlay",
                     "pacchetto":  "net.iappscl.inlay",
                     "stato":  "DISPONIBILE_TEST"
