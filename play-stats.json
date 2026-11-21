@@ -1,109 +1,109 @@
 {
-  "aggiornato": "2026-11-21 13:06",
+  "aggiornato": "2026-11-21 14:50",
   "app": [
     {
       "nome": "3D-Body",
       "pacchetto": "net.iappscl.body3d",
-      "download": 42,
-      "attivi": 20,
-      "disinstallazioni": 22,
-      "download_prec": 36,
-      "attivi_prec": 19,
-      "disinstallazioni_prec": 17,
-      "download30": 42,
+      "download": 63,
+      "attivi": 43,
+      "disinstallazioni": 20,
+      "download_prec": 42,
+      "attivi_prec": 20,
+      "disinstallazioni_prec": 22,
+      "download30": 63,
       "dal": "2026-10-25",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "AppLock",
       "pacchetto": "net.iappscl.applock",
-      "download": 187,
-      "attivi": 72,
-      "disinstallazioni": 115,
-      "download_prec": 145,
-      "attivi_prec": 57,
-      "disinstallazioni_prec": 88,
-      "download30": 187,
+      "download": 206,
+      "attivi": 67,
+      "disinstallazioni": 139,
+      "download_prec": 187,
+      "attivi_prec": 73,
+      "disinstallazioni_prec": 114,
+      "download30": 206,
       "dal": "2026-10-25",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Ausculto",
       "pacchetto": "net.iappscl.ausculto",
-      "download": 18,
-      "attivi": 6,
-      "disinstallazioni": 12,
+      "download": 19,
+      "attivi": 9,
+      "disinstallazioni": 10,
       "download_prec": 18,
       "attivi_prec": 6,
       "disinstallazioni_prec": 12,
-      "download30": 2,
+      "download30": 3,
       "dal": "2026-11-03",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Avvisami",
       "pacchetto": "net.iappscl.avvisami",
       "download": 19,
-      "attivi": 4,
-      "disinstallazioni": 15,
+      "attivi": 6,
+      "disinstallazioni": 13,
       "download_prec": 19,
       "attivi_prec": 4,
       "disinstallazioni_prec": 15,
       "download30": 3,
       "dal": "2026-09-26",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Blokko",
       "pacchetto": "net.iappscl.blokko",
       "download": 20,
-      "attivi": 4,
-      "disinstallazioni": 16,
+      "attivi": 5,
+      "disinstallazioni": 15,
       "download_prec": 20,
       "attivi_prec": 4,
       "disinstallazioni_prec": 16,
-      "download30": 1,
+      "download30": 0,
       "dal": "2026-10-09",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Bubbles",
       "pacchetto": "net.iappscl.bubbles",
-      "download": 24,
-      "attivi": 5,
+      "download": 26,
+      "attivi": 7,
       "disinstallazioni": 19,
       "download_prec": 24,
       "attivi_prec": 5,
       "disinstallazioni_prec": 19,
-      "download30": 5,
+      "download30": 7,
       "dal": "2026-09-26",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Don't Call!",
       "pacchetto": "net.iappscl.dontcall",
       "download": 48,
-      "attivi": 10,
-      "disinstallazioni": 38,
+      "attivi": 11,
+      "disinstallazioni": 37,
       "download_prec": 48,
-      "attivi_prec": 9,
-      "disinstallazioni_prec": 39,
-      "download30": 22,
+      "attivi_prec": 10,
+      "disinstallazioni_prec": 38,
+      "download30": 18,
       "dal": "2026-09-17",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Gravix",
       "pacchetto": "net.iappscl.gravix",
       "download": 20,
-      "attivi": 11,
-      "disinstallazioni": 9,
+      "attivi": 13,
+      "disinstallazioni": 7,
       "download_prec": 20,
       "attivi_prec": 11,
       "disinstallazioni_prec": 9,
       "download30": 19,
       "dal": "2026-10-25",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Legami",
@@ -112,37 +112,37 @@
       "attivi": 10,
       "disinstallazioni": 7,
       "download_prec": 17,
-      "attivi_prec": 11,
-      "disinstallazioni_prec": 6,
+      "attivi_prec": 10,
+      "disinstallazioni_prec": 7,
       "download30": 17,
       "dal": "2026-10-25",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Lumen",
       "pacchetto": "net.iappscl.lumen",
       "download": 19,
-      "attivi": 9,
-      "disinstallazioni": 10,
+      "attivi": 10,
+      "disinstallazioni": 9,
       "download_prec": 19,
-      "attivi_prec": 10,
-      "disinstallazioni_prec": 9,
+      "attivi_prec": 9,
+      "disinstallazioni_prec": 10,
       "download30": 18,
       "dal": "2026-10-25",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "Nìmbora",
       "pacchetto": "net.iappscl.nimbora",
       "download": 16,
-      "attivi": 9,
-      "disinstallazioni": 7,
+      "attivi": 10,
+      "disinstallazioni": 6,
       "download_prec": 16,
-      "attivi_prec": 11,
-      "disinstallazioni_prec": 5,
+      "attivi_prec": 9,
+      "disinstallazioni_prec": 7,
       "download30": 3,
       "dal": "2026-11-03",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "OneTool",
@@ -160,28 +160,28 @@
     {
       "nome": "Rec&Play",
       "pacchetto": "net.iappscl.recplay",
-      "download": 53,
-      "attivi": 17,
-      "disinstallazioni": 36,
-      "download_prec": 52,
-      "attivi_prec": 16,
+      "download": 54,
+      "attivi": 19,
+      "disinstallazioni": 35,
+      "download_prec": 53,
+      "attivi_prec": 17,
       "disinstallazioni_prec": 36,
-      "download30": 34,
+      "download30": 35,
       "dal": "2026-10-09",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "TrovAuto",
       "pacchetto": "net.iappscl.trovauto",
       "download": 27,
-      "attivi": 4,
-      "disinstallazioni": 23,
+      "attivi": 6,
+      "disinstallazioni": 21,
       "download_prec": 27,
-      "attivi_prec": 5,
-      "disinstallazioni_prec": 22,
+      "attivi_prec": 4,
+      "disinstallazioni_prec": 23,
       "download30": 3,
       "dal": "2026-09-20",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     },
     {
       "nome": "xMeteo",
@@ -189,12 +189,12 @@
       "download": 117,
       "attivi": 12,
       "disinstallazioni": 105,
-      "download_prec": 116,
-      "attivi_prec": 14,
-      "disinstallazioni_prec": 102,
-      "download30": 67,
+      "download_prec": 117,
+      "attivi_prec": 12,
+      "disinstallazioni_prec": 105,
+      "download30": 55,
       "dal": "2026-09-21",
-      "dati_al": "2026-11-16"
+      "dati_al": "2026-11-17"
     }
   ]
 }
