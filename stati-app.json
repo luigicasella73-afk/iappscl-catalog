@@ -43,12 +43,12 @@
                 {
                     "nome":  "Flipper",
                     "pacchetto":  "net.iappscl.flipper",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Future Bricks",
                     "pacchetto":  "net.iappscl.bricks",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Gravix",
@@ -88,7 +88,7 @@
                 {
                     "nome":  "Numaze",
                     "pacchetto":  "net.iappscl.numaze",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Ochre",
@@ -113,7 +113,7 @@
                 {
                     "nome":  "Relaxx",
                     "pacchetto":  "net.iappscl.relaxx",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Roadia",
@@ -133,7 +133,7 @@
                 {
                     "nome":  "Trip Friend",
                     "pacchetto":  "net.iappscl.tripfriend",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "TrovAuto",
@@ -143,7 +143,7 @@
                 {
                     "nome":  "Vitrea",
                     "pacchetto":  "net.iappscl.vitrea",
-                    "stato":  "TEST_IN_CORSO"
+                    "stato":  "ATTESA_PUBBLICAZIONE"
                 },
                 {
                     "nome":  "Whirlwick",
