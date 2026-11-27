@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-27 19:51",
+  "aggiornato": "2026-11-27 20:50",
   "app": [
     {
       "nome": "3D-Body",
@@ -106,6 +106,19 @@
       "dati_al": "2026-11-18"
     },
     {
+      "nome": "Future Bricks",
+      "pacchetto": "net.iappscl.bricks",
+      "download": 13,
+      "attivi": 12,
+      "disinstallazioni": 1,
+      "download_prec": 13,
+      "attivi_prec": 11,
+      "disinstallazioni_prec": 2,
+      "download30": 13,
+      "dal": "2026-11-09",
+      "dati_al": "2026-11-18"
+    },
+    {
       "nome": "Gravix",
       "pacchetto": "net.iappscl.gravix",
       "download": 20,
@@ -158,6 +171,19 @@
       "dati_al": "2026-11-18"
     },
     {
+      "nome": "Numaze",
+      "pacchetto": "net.iappscl.numaze",
+      "download": 12,
+      "attivi": 12,
+      "disinstallazioni": 0,
+      "download_prec": 12,
+      "attivi_prec": 10,
+      "disinstallazioni_prec": 2,
+      "download30": 12,
+      "dal": "2026-11-09",
+      "dati_al": "2026-11-18"
+    },
+    {
       "nome": "OneTool",
       "pacchetto": "net.iappscl.onetool",
       "download": 19,
@@ -181,6 +207,19 @@
       "disinstallazioni_prec": 35,
       "download30": 34,
       "dal": "2026-10-09",
+      "dati_al": "2026-11-18"
+    },
+    {
+      "nome": "Relaxx",
+      "pacchetto": "net.iappscl.relaxx",
+      "download": 16,
+      "attivi": 15,
+      "disinstallazioni": 1,
+      "download_prec": 16,
+      "attivi_prec": 12,
+      "disinstallazioni_prec": 4,
+      "download30": 16,
+      "dal": "2026-11-09",
       "dati_al": "2026-11-18"
     },
     {
