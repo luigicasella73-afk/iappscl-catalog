@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-27 18:37",
+  "aggiornato": "2026-11-27 19:05",
   "app": [
     {
       "nome": "3D-Body",
@@ -90,6 +90,19 @@
       "disinstallazioni_prec": 37,
       "download30": 17,
       "dal": "2026-09-17",
+      "dati_al": "2026-11-18"
+    },
+    {
+      "nome": "Flipper",
+      "pacchetto": "net.iappscl.flipper",
+      "download": 16,
+      "attivi": 15,
+      "disinstallazioni": 1,
+      "download_prec": 16,
+      "attivi_prec": 13,
+      "disinstallazioni_prec": 3,
+      "download30": 15,
+      "dal": "2026-11-09",
       "dati_al": "2026-11-18"
     },
     {
