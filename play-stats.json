@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-27 19:13",
+  "aggiornato": "2026-11-27 19:47",
   "app": [
     {
       "nome": "3D-Body",
@@ -194,6 +194,19 @@
       "disinstallazioni_prec": 21,
       "download30": 3,
       "dal": "2026-09-20",
+      "dati_al": "2026-11-18"
+    },
+    {
+      "nome": "Vitrea",
+      "pacchetto": "net.iappscl.vitrea",
+      "download": 15,
+      "attivi": 14,
+      "disinstallazioni": 1,
+      "download_prec": 15,
+      "attivi_prec": 12,
+      "disinstallazioni_prec": 3,
+      "download30": 15,
+      "dal": "2026-11-09",
       "dati_al": "2026-11-18"
     },
     {
