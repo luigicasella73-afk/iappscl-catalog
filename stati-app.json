@@ -48,7 +48,7 @@
                 {
                     "nome":  "Future Bricks",
                     "pacchetto":  "net.iappscl.bricks",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Gravix",
@@ -88,7 +88,7 @@
                 {
                     "nome":  "Numaze",
                     "pacchetto":  "net.iappscl.numaze",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Ochre",
@@ -113,7 +113,7 @@
                 {
                     "nome":  "Relaxx",
                     "pacchetto":  "net.iappscl.relaxx",
-                    "stato":  "ATTESA_PUBBLICAZIONE"
+                    "stato":  "PUBBLICATA"
                 },
                 {
                     "nome":  "Roadia",
