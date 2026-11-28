@@ -1,0 +1,35 @@
+# Approvazioni delle risposte ai commenti, dalla IAppsCL Dashboard (28/11/2026).
+# La Dashboard avvia questa azione passando le risposte modificate o approvate GIA' CIFRATE (input "dati", stessa chiave
+# dei guadagni AdMob); l'azione le scrive come approvazioni.txt nel ramo "approvazioni", che il PC legge ogni 30 minuti
+# (tools\feedback\telefono.ps1). Serve perche' il token della Dashboard puo' avviare azioni ma non scrivere file.
+name: Approvazioni risposte
+on:
+  workflow_dispatch:
+    inputs:
+      dati:
+        description: 'Risposte modificate o approvate (cifrate, base64)'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: approvazioni
+  cancel-in-progress: false
+jobs:
+  salva:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Scrive approvazioni.txt nel ramo approvazioni
+        env:
+          DATI: ${{ inputs.dati }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -e
+          echo "$DATI" | grep -Eq '^[A-Za-z0-9+/=]+$' || { echo "dati non validi"; exit 1; }
+          git init -q lavoro && cd lavoro
+          git config user.name IAppsCL && git config user.email IAppsCL@gmail.com
+          printf '%s' "$DATI" > approvazioni.txt
+          git add approvazioni.txt
+          git commit -qm "Approvazioni delle risposte dalla Dashboard (cifrate)"
+          git push -q --force "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:refs/heads/approvazioni
